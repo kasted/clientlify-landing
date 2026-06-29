@@ -118,24 +118,22 @@ a {
 }
 
 /* ── FAQ 2-col layout ── */
-.faq-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
-  align-items: start;
+.faq-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.faq-sidenav {
-  display: none;
+.faq-group-title {
+  min-width: 200px;
 }
 
 @media (min-width: 768px) {
-  .faq-layout {
-    grid-template-columns: 190px 1fr;
+  .faq-group {
+    display: grid;
+    grid-template-columns: 220px 1fr;
     gap: 0 72px;
-  }
-  .faq-sidenav {
-    display: block;
+    align-items: start;
   }
 }
 
