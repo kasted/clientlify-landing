@@ -121,15 +121,15 @@ export default function BookADemoForm() {
     >
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <Field label="First name">
-          <input required style={inputStyle} value={form.firstName} onChange={(e) => set("firstName", e.target.value)} placeholder="Scott" />
+          <input required style={inputStyle} value={form.firstName} onChange={(e) => set("firstName", e.target.value)} placeholder="First name" />
         </Field>
         <Field label="Last name">
-          <input required style={inputStyle} value={form.lastName} onChange={(e) => set("lastName", e.target.value)} placeholder="Mitchell" />
+          <input required style={inputStyle} value={form.lastName} onChange={(e) => set("lastName", e.target.value)} placeholder="Last name" />
         </Field>
       </div>
 
       <Field label="Business name">
-        <input required style={inputStyle} value={form.business} onChange={(e) => set("business", e.target.value)} placeholder="Scott's Burgers" />
+        <input required style={inputStyle} value={form.business} onChange={(e) => set("business", e.target.value)} placeholder="Your business name" />
       </Field>
 
       <Field label="Business website (optional)">
@@ -138,7 +138,7 @@ export default function BookADemoForm() {
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <Field label="Work email">
-          <input required type="email" style={inputStyle} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="scott@scotts-burgers.com" />
+          <input required type="email" style={inputStyle} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@yourbusiness.com" />
         </Field>
         <Field label="Phone (optional)">
           <input type="tel" style={inputStyle} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="+1 (555) 000-0000" />
