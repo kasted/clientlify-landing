@@ -35,35 +35,9 @@ export default function SiteNav() {
       >
         {/* Left: logo + main links */}
         <div style={{ display: "flex", alignItems: "center", gap: 36 }}>
-          <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", flexShrink: 0 }}>
-            <div
-              style={{
-                width: 30,
-                height: 30,
-                borderRadius: 8,
-                background: "#b4dc19",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#0f503c",
-                fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif",
-                fontWeight: 800,
-                fontSize: 17,
-              }}
-            >
-              C
-            </div>
-            <span
-              style={{
-                fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif",
-                fontWeight: 700,
-                fontSize: 19,
-                letterSpacing: "-0.01em",
-                color: "#f7f5f2",
-              }}
-            >
-              Clientlify
-            </span>
+          <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0 }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.svg" alt="Clientlify" height={32} style={{ display: "block" }} />
           </Link>
 
           <div style={{ alignItems: "center", gap: 2 }} className="nav-desktop">

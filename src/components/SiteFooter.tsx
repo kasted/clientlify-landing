@@ -15,34 +15,9 @@ export default function SiteFooter() {
         className="grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr]"
       >
         <div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
-            <div
-              style={{
-                width: 28,
-                height: 28,
-                borderRadius: 8,
-                background: "#0f503c",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#f7f5f2",
-                fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif",
-                fontWeight: 800,
-                fontSize: 15,
-              }}
-            >
-              C
-            </div>
-            <span
-              style={{
-                fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif",
-                fontWeight: 700,
-                fontSize: 18,
-                color: "#161d1a",
-              }}
-            >
-              Clientlify
-            </span>
+          <div style={{ marginBottom: 14 }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-light.svg" alt="Clientlify" height={28} style={{ display: "block" }} />
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.55, color: "#7c8a83", margin: 0, maxWidth: 280 }}>
             The client lifecycle platform built for event service businesses.
