@@ -1,4 +1,3 @@
-import Link from "next/link";
 import FaqAccordion, { FaqGroup } from "@/components/FaqAccordion";
 import CtaBand from "@/components/CtaBand";
 
@@ -68,52 +67,7 @@ export default function FaqPage() {
         <FaqAccordion groups={FAQ_GROUPS} />
       </section>
 
-      {/* Contact */}
-      <section data-animate style={{ maxWidth: 1440, margin: "0 auto", padding: "30px var(--page-gutter) 84px" }}>
-        <div
-          style={{
-            background: "#f7f5f2",
-            border: "1px solid #eeece6",
-            borderRadius: 24,
-            padding: 44,
-            display: "grid",
-            gridTemplateColumns: "1.1fr 1fr",
-            gap: 48,
-            alignItems: "center",
-          }}
-        >
-          <div>
-            <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 32, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 14px", color: "#161d1a" }}>
-              Still have a question?
-            </h2>
-            <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: "0 0 24px" }}>
-              Our team has run event ops too. Reach out and a real person will get back to you — usually same day.
-            </p>
-            <div style={{ display: "flex", gap: 13, flexWrap: "wrap" }}>
-              <Link href="/contact" style={{ fontSize: 15, fontWeight: 600, color: "#f7f5f2", background: "#0f503c", padding: "13px 24px", borderRadius: 11 }}>
-                Email support
-              </Link>
-              <Link href="/book-a-demo" style={{ fontSize: 15, fontWeight: 600, color: "#1a211e", background: "#fff", border: "1px solid #dbd8d0", padding: "13px 24px", borderRadius: 11 }}>
-                Book a demo
-              </Link>
-            </div>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-            {[
-              { label: "Response time", value: "Within one business day" },
-              { label: "Email", value: "hello@clientlify.com" },
-              { label: "Demo calls", value: "30 min, tailored to your workflow" },
-            ].map((item) => (
-              <div key={item.label} style={{ background: "#fff", border: "1px solid #e5e3db", borderRadius: 12, padding: "14px 18px" }}>
-                <div style={{ fontSize: 11.5, fontWeight: 600, color: "#9aa8a1", textTransform: "uppercase", letterSpacing: ".03em", marginBottom: 3 }}>{item.label}</div>
-                <div style={{ fontSize: 14.5, fontWeight: 600, color: "#3a443e" }}>{item.value}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CtaBand
+<CtaBand
         heading="Still have questions? Let's talk."
         subtext="Book a 30-minute demo and we'll answer everything — live, with your actual workflow in front of us."
       />
