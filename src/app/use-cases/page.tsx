@@ -51,7 +51,7 @@ export default function UseCasesPage() {
       <div style={{ background: "#0f503c" }}>
       <section className="anim-page-hero" style={{ maxWidth: 780, margin: "0 auto", padding: "96px 32px 88px", textAlign: "center" }}>
         <h1 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 54, lineHeight: 1.05, letterSpacing: "-.025em", margin: "0 0 20px", color: "#f7f5f2" }}>
-          Purpose-built for catering and event businesses
+          Purpose-built for event service businesses
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 580 }}>
           Whether you're serving tacos, delivering tents, or dropping off bounce houses — Clientlify handles the client side so you can focus on the work.

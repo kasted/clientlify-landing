@@ -11,7 +11,7 @@ const FAQ_GROUPS: FaqGroup[] = [
   {
     title: "Getting started",
     items: [
-      { q: "How do I get started?", a: "Book a demo and we'll walk you through the platform live. Most caterers are fully set up the same day — add your branding, drop the form on your site, and you're capturing leads." },
+      { q: "How do I get started?", a: "Book a demo and we'll walk you through the platform live. Most event businesses are fully set up the same day — add your branding, drop the form on your site, and you're capturing leads." },
       { q: "How do leads get into Clientlify?", a: "Embed the customizable web form on your site and inquiries flow in automatically as New leads. You can also add leads manually for calls, referrals, or walk-ins — every field is yours to configure." },
       { q: "Can I import my existing leads?", a: "Yes. Bring over your current inquiries and clients, and they'll slot straight into the pipeline with their statuses intact. Support can walk you through it in about ten minutes." },
     ],
@@ -87,7 +87,7 @@ export default function FaqPage() {
               Still have a question?
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: "0 0 24px" }}>
-              Our team has run catering ops too. Reach out and a real person will get back to you — usually same day.
+              Our team has run event ops too. Reach out and a real person will get back to you — usually same day.
             </p>
             <div style={{ display: "flex", gap: 13, flexWrap: "wrap" }}>
               <Link href="/contact" style={{ fontSize: 15, fontWeight: 600, color: "#f7f5f2", background: "#0f503c", padding: "13px 24px", borderRadius: 11 }}>

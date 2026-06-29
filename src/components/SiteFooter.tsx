@@ -9,7 +9,7 @@ export default function SiteFooter() {
           margin: "0 auto",
           padding: "54px var(--page-gutter) 40px",
           display: "grid",
-          gridTemplateColumns: "1.6fr 1fr 1fr 1fr",
+          gridTemplateColumns: "1.6fr 1fr 1fr",
           gap: 40,
         }}
         className="grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr]"
@@ -45,7 +45,7 @@ export default function SiteFooter() {
             </span>
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.55, color: "#7c8a83", margin: 0, maxWidth: 280 }}>
-            The client lifecycle platform built for catering businesses.
+            The client lifecycle platform built for event service businesses.
           </p>
         </div>
 
@@ -67,13 +67,6 @@ export default function SiteFooter() {
             { href: "/contact", label: "Contact" },
           ]}
         />
-        <FooterCol
-          title="Legal"
-          links={[
-            { href: "/privacy", label: "Privacy" },
-            { href: "/terms", label: "Terms" },
-          ]}
-        />
       </div>
 
       <div style={{ borderTop: "1px solid #eeece6" }}>
@@ -92,7 +85,10 @@ export default function SiteFooter() {
           }}
         >
           <span>© 2026 Clientlify. All rights reserved.</span>
-          <span>Made for caterers, with care.</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+            <Link href="/privacy" style={{ color: "inherit" }}>Privacy</Link>
+            <Link href="/terms" style={{ color: "inherit" }}>Terms</Link>
+          </div>
         </div>
       </div>
     </footer>

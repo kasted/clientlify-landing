@@ -9,10 +9,10 @@ import CtaBand from "@/components/CtaBand";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Clientlify — Client Management for Catering Businesses",
-  description: "Capture leads, send quotes, collect deposits, and manage events — all in one place. Built for catering and event businesses by a caterer.",
+  title: "Clientlify — Client Management for Event Businesses",
+  description: "Capture leads, send quotes, collect deposits, and manage events — all in one place. Built for catering, rentals, and every event-based business.",
   openGraph: {
-    title: "Clientlify — Client Management for Catering Businesses",
+    title: "Clientlify — Client Management for Event Businesses",
     description: "Capture leads, send quotes, collect deposits, and manage events — all in one place.",
   },
   alternates: { canonical: "https://clientlify.com" },
@@ -107,13 +107,13 @@ export default function HomePage() {
         <section style={{ maxWidth: 880, margin: "0 auto", padding: "72px var(--page-gutter) 96px", textAlign: "center" }}>
           <div className="anim-hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(180,220,25,.18)", color: "#b4dc19", padding: "7px 14px", borderRadius: 30, fontSize: 13, fontWeight: 600, marginBottom: 24 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#b4dc19", display: "block" }} />
-            Built for catering businesses
+            Built for event service businesses
           </div>
           <h1 className="anim-hero-heading" style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 60, lineHeight: 1.03, letterSpacing: "-.025em", margin: "0 0 22px", color: "#f7f5f2" }}>
             Every lead, event, and invoice in one place.
           </h1>
           <p className="anim-hero-body" style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto 32px" }}>
-            Clientlify takes a catering inquiry from first form submission to post-event review — pipeline tracking, quotes, deposits, events, and revenue, without the spreadsheet chaos.
+            Clientlify takes an inquiry from first form submission to post-event review — pipeline tracking, quotes, deposits, events, and revenue, without the spreadsheet chaos.
           </p>
           <div className="anim-hero-cta" style={{ display: "flex", gap: 13, flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/book-a-demo" style={{ fontSize: 15.5, fontWeight: 600, color: "#0f503c", background: "#b4dc19", padding: "14px 26px", borderRadius: 11, boxShadow: "0 10px 28px -8px rgba(100,130,0,.35)" }}>
@@ -363,7 +363,7 @@ export default function HomePage() {
 
       <CtaBand
         heading="Spend less time on admin,<br>more time in the kitchen."
-        subtext="Join catering teams running their entire client lifecycle on Clientlify."
+        subtext="Join event businesses running their entire client lifecycle on Clientlify."
         btnLabel="Book a Demo"
       />
     </main>

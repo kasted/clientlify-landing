@@ -40,7 +40,7 @@ export default function TermsPage() {
 
         <Section title="2. Description of Service">
           <p style={{ margin: 0 }}>
-            Clientlify is a client lifecycle management platform designed for event-based and catering businesses. The Service includes lead pipeline management, quoting, invoicing, event management, payment processing via Square, and related tools. We reserve the right to modify or discontinue the Service at any time with or without notice.
+            Clientlify is a client lifecycle management platform designed for event service businesses. The Service includes lead pipeline management, quoting, invoicing, event management, payment processing via Square, and related tools. We reserve the right to modify or discontinue the Service at any time with or without notice.
           </p>
         </Section>
 

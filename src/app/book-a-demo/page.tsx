@@ -5,7 +5,7 @@ export const metadata = {
   description: "See Clientlify live in 30 minutes. We'll walk through leads, quotes, deposits, and events tailored to your specific workflow.",
   openGraph: {
     title: "Book a Demo — Clientlify",
-    description: "See Clientlify live in 30 minutes. Tailored to your catering or event business workflow.",
+    description: "See Clientlify live in 30 minutes. Tailored to your specific event business workflow.",
   },
 };
 

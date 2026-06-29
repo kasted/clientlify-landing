@@ -21,13 +21,13 @@ const hanken = Hanken_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clientlify.com"),
-  title: "Clientlify — Client Management for Catering Businesses",
+  title: "Clientlify — Client Management for Event Businesses",
   description:
-    "Every lead, event, and invoice in one place. Clientlify takes a catering inquiry from first form submission to post-event follow-up — built by a caterer, for caterers.",
+    "Every lead, event, and invoice in one place. Clientlify takes an inquiry from first form submission to post-event follow-up — built for catering, rentals, and every event-based business.",
   openGraph: {
     type: "website",
     siteName: "Clientlify",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Clientlify — catering business management" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Clientlify — event business management" }],
   },
   twitter: {
     card: "summary_large_image",
