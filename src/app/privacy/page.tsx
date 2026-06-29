@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Privacy Policy — Clientlify",
+  title: "Privacy Policy | Clientlify",
   description: "How Clientlify collects, uses, and protects your information. Read our full privacy policy.",
 };
 
@@ -74,9 +74,9 @@ export default function PrivacyPage() {
             We do not sell, trade, or rent your personal information to third parties. We may share your information with:
           </p>
           <ul style={{ margin: 0, paddingLeft: 20, display: "flex", flexDirection: "column", gap: 8 }}>
-            <li><strong style={{ color: "#3a443e" }}>Service providers</strong> — third-party vendors who assist us in operating the Service (e.g., hosting, analytics, payment processing via Square)</li>
-            <li><strong style={{ color: "#3a443e" }}>Legal compliance</strong> — when required by law, subpoena, or other legal process</li>
-            <li><strong style={{ color: "#3a443e" }}>Business transfers</strong> — in connection with a merger, acquisition, or sale of all or a portion of our assets</li>
+            <li><strong style={{ color: "#3a443e" }}>Service providers:</strong> third-party vendors who assist us in operating the Service (e.g., hosting, analytics, payment processing via Square)</li>
+            <li><strong style={{ color: "#3a443e" }}>Legal compliance:</strong> when required by law, subpoena, or other legal process</li>
+            <li><strong style={{ color: "#3a443e" }}>Business transfers:</strong> in connection with a merger, acquisition, or sale of all or a portion of our assets</li>
           </ul>
         </Section>
 

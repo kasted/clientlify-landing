@@ -3,8 +3,8 @@ import CtaBand from "@/components/CtaBand";
 import type { CSSProperties } from "react";
 
 export const metadata = {
-  title: "Integrations — Clientlify",
-  description: "Connect Clientlify to Square, Google Calendar, Stripe, PayPal, and more — with new integrations always on the way.",
+  title: "Integrations | Clientlify",
+  description: "Connect Clientlify to Square, Google Calendar, Stripe, PayPal, and more, with new integrations always on the way.",
 };
 
 const LIVE: Integration[] = [
@@ -13,7 +13,7 @@ const LIVE: Integration[] = [
     category: "Payments",
     icon: "/square.png",
     description:
-      "Process deposits and final invoices directly in Clientlify. Clients pay by card and funds land in your Square account — no invoice chasing, no manual reconciliation.",
+      "Process deposits and final invoices directly in Clientlify. Clients pay by card and funds land in your Square account. No invoice chasing, no manual reconciliation.",
   },
   {
     name: "Google Calendar",
@@ -27,14 +27,14 @@ const LIVE: Integration[] = [
     category: "Payments",
     icon: "/paypal.png",
     description:
-      "Accept deposits and final payments via PayPal. Clients can pay from their PayPal balance or any linked card — no Square account required on their end.",
+      "Accept deposits and final payments via PayPal. Clients can pay from their PayPal balance or any linked card. No Square account required on their end.",
   },
   {
     name: "Stripe",
     category: "Payments",
     icon: "/stripe.png",
     description:
-      "A full card-processing rail built on Stripe. Use it alongside Square or as your primary payment method — whichever fits your workflow.",
+      "A full card-processing rail built on Stripe. Use it alongside Square or as your primary payment method, whichever fits your workflow.",
   },
 ];
 
@@ -58,7 +58,7 @@ const COMING_SOON: Integration[] = [
     category: "E-Signatures",
     icon: "/docusign.png",
     description:
-      "Send event contracts for e-signature directly from a lead or booking record. Track signing status in real time — no PDFs back and forth.",
+      "Send event contracts for e-signature directly from a lead or booking record. Track signing status in real time, no PDFs back and forth.",
   },
   {
     name: "Mailchimp",
@@ -72,7 +72,7 @@ const COMING_SOON: Integration[] = [
     category: "Automation",
     icon: "/zapier.png",
     description:
-      "Connect Clientlify to thousands of other apps. Trigger workflows from new leads, status changes, payments received, and more — no code required.",
+      "Connect Clientlify to thousands of other apps. Trigger workflows from new leads, status changes, payments received, and more. No code required.",
   },
   {
     name: "Microsoft 365 / Outlook",
@@ -332,7 +332,7 @@ export default function IntegrationsPage() {
               maxWidth: 560,
             }}
           >
-            Clientlify connects to your payment processors, calendar, accounting software, and more — so your data moves with you instead of staying stuck in silos.
+            Clientlify connects to your payment processors, calendar, accounting software, and more, so your data moves with you instead of staying stuck in silos.
           </p>
         </section>
       </div>

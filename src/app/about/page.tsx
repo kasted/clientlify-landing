@@ -3,7 +3,7 @@ import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
-  title: "About — Clientlify",
+  title: "About | Clientlify",
   description: "Clientlify was built by Scott Mitchell, owner of Scott's Burgers, to manage his own catering and event business.",
 };
 
@@ -32,18 +32,18 @@ export default function AboutPage() {
               Scott built the tool he wished he had
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.65, color: "#566159", margin: "0 0 18px" }}>
-              Scott Mitchell has been running Scott's Burgers for years — a catering operation that handles everything from backyard cookouts to large corporate events. Like most owner-operators, he wore every hat: cook, salesperson, bookkeeper, and customer service rep all at once.
+              Scott Mitchell has been running Scott's Burgers for years, a catering operation that handles everything from backyard cookouts to large corporate events. Like most owner-operators, he wore every hat: cook, salesperson, bookkeeper, and customer service rep all at once.
             </p>
             <p style={{ fontSize: 16.5, lineHeight: 1.65, color: "#566159", margin: "0 0 18px" }}>
-              Leads came in through a contact form and landed in his email. Quotes lived in a Google Doc. Deposits were tracked in a spreadsheet. Follow-ups happened when he remembered to check. It worked — until it didn't.
+              Leads came in through a contact form and landed in his email. Quotes lived in a Google Doc. Deposits were tracked in a spreadsheet. Follow-ups happened when he remembered to check. It worked, until it didn't.
             </p>
             <p style={{ fontSize: 16.5, lineHeight: 1.65, color: "#566159", margin: 0 }}>
-              So he built Clientlify: a single place to capture leads, send quotes, collect deposits, manage events, and follow up — without switching between five different tools. He's been running Scott's Burgers on it ever since. Now it's available for every event-based business facing the same problem.
+              So he built Clientlify: a single place to capture leads, send quotes, collect deposits, manage events, and follow up, without switching between five different tools. He's been running Scott's Burgers on it ever since. Now it's available for every event-based business facing the same problem.
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
             <div style={{ position: "relative", height: 460, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-              <Image src="/about.png" alt="Scott Mitchell — Scott's Burgers" fill priority sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+              <Image src="/about.png" alt="Scott Mitchell of Scott's Burgers" fill priority sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
             </div>
             <div className="pop-card" style={{ position: "absolute", left: -22, bottom: 32, width: 220, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: 16, boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
               <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 15, color: "#161d1a", marginBottom: 3 }}>Scott Mitchell</div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   </svg>
                 ),
                 title: "Simple by default",
-                body: "You shouldn't need a training course to send a quote. Clientlify is designed to be obvious — fast to learn, faster to use.",
+                body: "You shouldn't need a training course to send a quote. Clientlify is designed to be obvious: fast to learn, faster to use.",
               },
               {
                 icon: (

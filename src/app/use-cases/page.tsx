@@ -3,7 +3,7 @@ import CtaBand from "@/components/CtaBand";
 import type { CSSProperties } from "react";
 
 export const metadata = {
-  title: "Use Cases — Clientlify",
+  title: "Use Cases | Clientlify",
   description: "See how Clientlify works for taco catering, party rentals, jumper rentals, and other event-based businesses.",
 };
 
@@ -54,7 +54,7 @@ export default function UseCasesPage() {
           Purpose-built for event service businesses
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 580 }}>
-          Whether you're serving tacos, delivering tents, or dropping off bounce houses — Clientlify handles the client side so you can focus on the work.
+          Whether you're serving tacos, delivering tents, or dropping off bounce houses, Clientlify handles the client side so you can focus on the work.
         </p>
       </section>
       </div>
@@ -79,7 +79,7 @@ export default function UseCasesPage() {
                 </svg>
               }
               title="Custom Menus & Packages"
-              body="Build reusable menu packages with protein options, side selections, and serving styles. Attach them to quotes so clients see exactly what they're getting — and you never over- or under-order."
+              body="Build reusable menu packages with protein options, side selections, and serving styles. Attach them to quotes so clients see exactly what they're getting, so you never over- or under-order."
             />
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
@@ -134,7 +134,7 @@ export default function UseCasesPage() {
                 Manage equipment bookings without the chaos
               </h2>
               <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: 0 }}>
-                Tents, tables, chairs, linens — party rental businesses deal with high-volume bookings, tight delivery windows, and careful equipment coordination. Clientlify gives you one place to track every rental from quote to pickup.
+                Tents, tables, chairs, linens: party rental businesses deal with high-volume bookings, tight delivery windows, and careful equipment coordination. Clientlify gives you one place to track every rental from quote to pickup.
               </p>
               <FeatureCallout
                 icon={
@@ -160,7 +160,7 @@ export default function UseCasesPage() {
               Book more bounce houses, stress less
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: 0 }}>
-              Inflatable rentals live and die by availability. Clientlify handles your inquiries, quotes, and deposits — so you can focus on making sure every unit shows up on time and in perfect shape.
+              Inflatable rentals live and die by availability. Clientlify handles your inquiries, quotes, and deposits, so you can focus on making sure every unit shows up on time and in perfect shape.
             </p>
             <FeatureCallout
               icon={

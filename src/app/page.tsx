@@ -9,11 +9,11 @@ import CtaBand from "@/components/CtaBand";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Clientlify — Client Management for Event Businesses",
-  description: "Capture leads, send quotes, collect deposits, and manage events — all in one place. Built for catering, rentals, and every event-based business.",
+  title: "Clientlify | Client Management for Event Businesses",
+  description: "Capture leads, send quotes, collect deposits, and manage events, all in one place. Built for catering, rentals, and every event-based business.",
   openGraph: {
-    title: "Clientlify — Client Management for Event Businesses",
-    description: "Capture leads, send quotes, collect deposits, and manage events — all in one place.",
+    title: "Clientlify | Client Management for Event Businesses",
+    description: "Capture leads, send quotes, collect deposits, and manage events, all in one place.",
   },
   alternates: { canonical: "https://clientlify.com" },
 };
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FEATURES = [
   {
     title: "Lead capture form",
-    body: "A customizable web form turns every inquiry into a tracked lead automatically — or add them by hand in seconds.",
+    body: "A customizable web form turns every inquiry into a tracked lead automatically. Add them by hand in seconds too.",
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f503c" strokeWidth="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>,
   },
   {
@@ -36,7 +36,7 @@ const FEATURES = [
   },
   {
     title: "Events & calendar",
-    body: "Approved bookings become full events with their own detail page — and sync straight to Google Calendar.",
+    body: "Approved bookings become full events with their own detail page, synced straight to Google Calendar.",
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f503c" strokeWidth="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/><path d="M8 14l3 3 5-6"/></svg>,
   },
   {
@@ -82,7 +82,7 @@ const HOME_FAQ: FaqGroup[] = [
     items: [
       { q: "How do leads get into Clientlify?", a: "Embed the customizable web form on your site and inquiries flow in automatically as New leads. You can also add leads manually for calls, referrals, or walk-ins." },
       { q: "How does payment processing work?", a: "Clientlify integrates with Square to collect deposits and final invoice payments in-app. Deposit payments trigger notifications and can automatically convert an approved lead into a live event." },
-      { q: "What happens when a lead is approved?", a: "Once a deposit is collected, the lead becomes a full event with its own detail page — confirmed address, special-request line items, invoice management, and a Google Calendar entry created automatically." },
+      { q: "What happens when a lead is approved?", a: "Once a deposit is collected, the lead becomes a full event with its own detail page: confirmed address, special-request line items, invoice management, and a Google Calendar entry created automatically." },
       { q: "Can I track costs and real revenue?", a: "Yes. A projected view estimates pipeline value from quotes, while the actuals view reflects paid invoices. Add food, labor, and misc costs per event to see true margin, not just top-line revenue." },
       { q: "What about leads that don't convert?", a: "Archive them to keep your pipeline clean. Archived leads don't affect your stats or financials, and you can always bring them back if a client returns." },
     ],
@@ -113,7 +113,7 @@ export default function HomePage() {
             Every lead, event, and invoice in one place.
           </h1>
           <p className="anim-hero-body" style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto 32px" }}>
-            Clientlify takes an inquiry from first form submission to post-event review — pipeline tracking, quotes, deposits, events, and revenue, without the spreadsheet chaos.
+            Clientlify takes an inquiry from first form submission to post-event review. Pipeline tracking, quotes, deposits, events, and revenue, without the spreadsheet chaos.
           </p>
           <div className="anim-hero-cta" style={{ display: "flex", gap: 13, flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/book-a-demo" style={{ fontSize: 15.5, fontWeight: 600, color: "#0f503c", background: "#b4dc19", padding: "14px 26px", borderRadius: 11, boxShadow: "0 10px 28px -8px rgba(100,130,0,.35)" }}>
@@ -223,7 +223,7 @@ export default function HomePage() {
               A clear path from inquiry to event
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.55, color: "#566159", margin: 0 }}>
-              Every lead moves through the same four stages — so nothing slips and you always know what needs attention.
+              Every lead moves through the same four stages, so nothing slips and you always know what needs attention.
             </p>
           </div>
 
@@ -289,7 +289,7 @@ export default function HomePage() {
               Projected vs. actual revenue, per event
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: "0 0 26px" }}>
-              See pipeline value from quote estimates, then track what's actually paid. Break down food, labor, and misc costs on every event so you know your true margin — not just your top line.
+              See pipeline value from quote estimates, then track what's actually paid. Break down food, labor, and misc costs on every event so you know your true margin, not just your top line.
             </p>
             {[
               [<><b style={{ color: "#161d1a", fontWeight: 700 }}>Square integration</b> processes deposits and final invoices in-app.</>, "Square integration"],

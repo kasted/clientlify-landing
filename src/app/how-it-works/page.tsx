@@ -3,7 +3,7 @@ import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
-  title: "How It Works — Clientlify",
+  title: "How It Works | Clientlify",
   description: "Five steps take a lead all the way through. Clientlify handles the busywork between each one.",
 };
 
@@ -36,7 +36,7 @@ export default function HowItWorksPage() {
               A new lead arrives, fully detailed
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: 0 }}>
-              A client submits your web form — or you add them by hand. Contact info, event date, time, location, guest count, and special requests land in the pipeline as a New lead, and you get an instant alert.
+              A client submits your web form, or you add them by hand. Contact info, event date, time, location, guest count, and special requests land in the pipeline as a New lead, and you get an instant alert.
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
@@ -107,7 +107,7 @@ export default function HowItWorksPage() {
               Collect a deposit, confirm the booking
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: 0 }}>
-              The client pays the deposit through Square, right from the quote. That payment marks the lead Approved, triggers a notification, and is ready to become a full event — no manual data entry.
+              The client pays the deposit through Square, right from the quote. That payment marks the lead Approved, triggers a notification, and is ready to become a full event, with no manual data entry.
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
@@ -182,7 +182,7 @@ export default function HowItWorksPage() {
               Close the loop and collect reviews
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: 0 }}>
-              After the event, a follow-up email goes out automatically to collect a review — using your template and review link. The event rolls into your actuals, so paid revenue and true margin update on the dashboard.
+              After the event, a follow-up email goes out automatically to collect a review, using your template and review link. The event rolls into your actuals, so paid revenue and true margin update on the dashboard.
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>

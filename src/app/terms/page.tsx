@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Terms of Service — Clientlify",
+  title: "Terms of Service | Clientlify",
   description: "The rules and conditions for using Clientlify. Read our full terms of service before signing up.",
 };
 

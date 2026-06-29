@@ -1,11 +1,11 @@
 import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
-  title: "Contact — Clientlify",
-  description: "Have a question about Clientlify? Reach out and a real person will get back to you — usually the same day.",
+  title: "Contact | Clientlify",
+  description: "Have a question about Clientlify? Reach out and a real person will get back to you, usually the same day.",
   openGraph: {
-    title: "Contact — Clientlify",
-    description: "Have a question about Clientlify? Reach out and a real person will get back to you — usually the same day.",
+    title: "Contact | Clientlify",
+    description: "Have a question about Clientlify? Reach out and a real person will get back to you, usually the same day.",
   },
 };
 
@@ -68,7 +68,7 @@ export default function ContactPage() {
               <div style={{ fontSize: 13.5, lineHeight: 1.55, color: "#566159" }}>
                 If you&apos;d like a live walkthrough of Clientlify,{" "}
                 <a href="/book-a-demo" style={{ color: "#0f503c", fontWeight: 600 }}>use the demo booking form</a>
-                {" "}instead — we&apos;ll set up a call around your schedule.
+                {" "}instead. We&apos;ll set up a call around your schedule.
               </div>
             </div>
           </div>

@@ -4,8 +4,8 @@ import CtaBand from "@/components/CtaBand";
 import type { CSSProperties } from "react";
 
 export const metadata = {
-  title: "Features — Clientlify",
-  description: "One dashboard for the entire client lifecycle — capture, quote, book, deliver, and follow up.",
+  title: "Features | Clientlify",
+  description: "One dashboard for the entire client lifecycle: capture, quote, book, deliver, and follow up.",
 };
 
 function CheckIcon() {
@@ -38,7 +38,7 @@ export default function FeaturesPage() {
           Everything you need to run your event business, end to end
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 600 }}>
-          One dashboard for the entire client lifecycle — capture, quote, book, deliver, and follow up — with the numbers that keep you profitable.
+          One dashboard for the entire client lifecycle: capture, quote, book, deliver, and follow up, with the numbers that keep you profitable.
         </p>
       </section>
       </div>
@@ -79,7 +79,7 @@ export default function FeaturesPage() {
               Turn every inquiry into a tracked lead
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 14px" }}>
-              Embed a customizable web form on your site and inquiries flow straight into your pipeline — contact info, event date, guest count, and special requests captured automatically. Or add walk-ins and phone leads by hand in seconds.
+              Embed a customizable web form on your site and inquiries flow straight into your pipeline: contact info, event date, guest count, and special requests captured automatically. Or add walk-ins and phone leads by hand in seconds.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
               <Bullet text="Customizable fields and branding to match your business" />
@@ -114,7 +114,7 @@ export default function FeaturesPage() {
               Always know where every lead stands
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 14px" }}>
-              Every lead moves through New, Viewed, Quote Sent, and Approved. Drag between stages, spot leads overdue for follow-up, and archive the ones that don&apos;t convert — without touching your stats.
+              Every lead moves through New, Viewed, Quote Sent, and Approved. Drag between stages, spot leads overdue for follow-up, and archive the ones that don&apos;t convert, without touching your stats.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
               <Bullet text="Overdue-for-follow-up flags so nothing slips" />
@@ -154,7 +154,7 @@ export default function FeaturesPage() {
               Quotes, deposits, and invoices in one flow
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 14px" }}>
-              Send branded quotes built from your menu selections, collect deposits to confirm the booking, and process final invoices — all through built-in Square payments.
+              Send branded quotes built from your menu selections, collect deposits to confirm the booking, and process final invoices, all through built-in Square payments.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
               <Bullet text="Square integration for deposits and final payments" />
@@ -187,7 +187,7 @@ export default function FeaturesPage() {
             </div>
             <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: ".05em", textTransform: "uppercase", color: "#0f503c", marginBottom: 8 }}>Events</div>
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 26, lineHeight: 1.12, letterSpacing: "-.02em", margin: "0 0 11px", color: "#161d1a" }}>
-              Approved bookings become events — on your calendar
+              Approved bookings become events on your calendar
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 14px" }}>
               Once a deposit lands, the lead becomes a full event with its own detail page: confirmed address, line items, invoice management, and post-event review collection. Google Calendar syncs on confirmation.
@@ -234,7 +234,7 @@ export default function FeaturesPage() {
                   Projected vs. actual, with true margins
                 </h2>
                 <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 16px" }}>
-                  See pipeline value from quote estimates, then track what&apos;s actually been paid. Add food, labor, and miscellaneous costs to every event so you know your real margin — not just your top line. Revenue this month, conversion rate, and overdue follow-ups are always one glance away.
+                  See pipeline value from quote estimates, then track what&apos;s actually been paid. Add food, labor, and miscellaneous costs to every event so you know your real margin, not just your top line. Revenue this month, conversion rate, and overdue follow-ups are always one glance away.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
                   <Bullet text="Projected and actuals views, side by side" />
@@ -249,7 +249,7 @@ export default function FeaturesPage() {
 
       <CtaBand
         heading="See every feature in your own pipeline"
-        subtext="30 minutes with your actual workflow — leads, quotes, deposits — and you'll know if it fits."
+        subtext="30 minutes with your actual workflow: leads, quotes, deposits. You'll know if it fits."
         btnLabel="Book a Demo"
       />
     </main>
