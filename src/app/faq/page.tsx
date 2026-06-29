@@ -64,7 +64,7 @@ export default function FaqPage() {
       </div>
 
       {/* FAQ groups */}
-      <section data-animate style={{ maxWidth: 820, margin: "0 auto", padding: "88px 32px 30px" }}>
+      <section style={{ maxWidth: 1100, margin: "0 auto", padding: "88px 32px 30px" }}>
         <FaqAccordion groups={FAQ_GROUPS} />
       </section>
 

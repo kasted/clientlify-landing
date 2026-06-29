@@ -117,6 +117,28 @@ a {
   flex-direction: column;
 }
 
+/* ── FAQ 2-col layout ── */
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+.faq-sidenav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .faq-layout {
+    grid-template-columns: 190px 1fr;
+    gap: 0 72px;
+  }
+  .faq-sidenav {
+    display: block;
+  }
+}
+
 /* ── Onload / scroll animations ── */
 @keyframes pop-in {
   from { opacity: 0; transform: scale(0.84); }
