@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fonts */
+  --font-display: "Schibsted Grotesk", sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+
+  /* Brand colors */
+  --color-accent: #0f503c;
+  --color-accent-deep: #0b3d2e;
+  --color-accent-soft: #ecf6c5;
+  --color-ink: #161d1a;
+  --color-body: #566159;
+  --color-body-dark: #3a443e;
+  --color-muted: #7c8a83;
+  --color-muted-light: #8b9790;
+  --color-muted-lighter: #9aa8a1;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f7f5f2;
+  --color-border: #eeece6;
+  --color-border-dark: #e5e3db;
+  --color-warm-text: #c2693f;
+  --color-warm-bg: #fdf0e8;
+  --color-blue-text: #3f63b8;
+  --color-blue-bg: #eaf0fb;
+
+  /* Max widths */
+  --container-page: 1180px;
+  --container-narrow: 880px;
+  --container-text: 780px;
+}
+
+:root {
+  --page-gutter: 24px;
+  --page-max: 1440px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-gutter: 100px;
+  }
+}
+
+@media (min-width: 1540px) {
+  :root {
+    --page-gutter: 0px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: #fff;
+  color: #1a211e;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #ecf6c5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-desktop {
+  display: none;
+}
+.nav-mobile-btn {
+  display: flex;
+}
+.nav-mobile-menu {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+  }
+  .nav-mobile-btn {
+    display: none;
+  }
+  .nav-mobile-menu {
+    display: none;
+  }
+}
+
+/* Features + dashboard layout */
+.features-layout {
+  display: grid;
+  gap: 22px;
+  align-items: stretch;
+}
+.features-side-left { order: 2; }
+.features-center    { order: 1; }
+.features-side-right { order: 3; }
+
+@media (min-width: 1025px) {
+  .features-layout {
+    grid-template-columns: 1fr 2.5fr 1fr;
+  }
+  .features-side-left  { order: unset; }
+  .features-center     { order: unset; }
+  .features-side-right { order: unset; }
+}
+
+.features-center {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Onload / scroll animations ── */
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.84); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.anim-page-hero    { animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) 80ms  both; }
+.anim-hero-badge   { animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) 100ms  both; }
+.anim-hero-heading { animation: fade-up 0.7s  cubic-bezier(0.22, 1, 0.36, 1) 220ms  both; }
+.anim-hero-body    { animation: fade-up 0.7s  cubic-bezier(0.22, 1, 0.36, 1) 360ms  both; }
+.anim-hero-cta     { animation: fade-up 0.7s  cubic-bezier(0.22, 1, 0.36, 1) 500ms  both; }
+.anim-hero-collage { animation: fade-up 0.8s  cubic-bezier(0.22, 1, 0.36, 1) 650ms  both; }
+
+/* Overlay cards — pop in after the image reveals */
+.hero-card-left   { animation: pop-in 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 1050ms both; }
+.hero-card-right  { animation: pop-in 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 1300ms both; }
+.hero-card-bottom { animation: pop-in 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 1550ms both; }
+
+/* Overlay cards triggered by parent scroll-reveal */
+.is-visible .pop-card {
+  animation: pop-in 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) var(--pop-delay, 800ms) both;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--anim-delay, 0ms);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate],
+  .anim-page-hero,
+  .anim-hero-badge, .anim-hero-heading, .anim-hero-body, .anim-hero-cta, .anim-hero-collage,
+  .hero-card-left, .hero-card-right, .hero-card-bottom, .is-visible .pop-card {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
