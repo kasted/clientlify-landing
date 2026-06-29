@@ -4,7 +4,6 @@ import Link from "next/link";
 import HeroVideo from "@/components/HeroVideo";
 import AppMockup from "@/components/AppMockup";
 
-import FaqAccordion, { FaqGroup } from "@/components/FaqAccordion";
 import CtaBand from "@/components/CtaBand";
 import { Check } from "lucide-react";
 
@@ -76,18 +75,6 @@ const KANBAN = [
 ];
 
 
-const HOME_FAQ: FaqGroup[] = [
-  {
-    title: "",
-    items: [
-      { q: "How do leads get into Clientlify?", a: "Embed the customizable web form on your site and inquiries flow in automatically as New leads. You can also add leads manually for calls, referrals, or walk-ins." },
-      { q: "How does payment processing work?", a: "Clientlify integrates with Square to collect deposits and final invoice payments in-app. Deposit payments trigger notifications and can automatically convert an approved lead into a live event." },
-      { q: "What happens when a lead is approved?", a: "Once a deposit is collected, the lead becomes a full event with its own detail page: confirmed address, special-request line items, invoice management, and a Google Calendar entry created automatically." },
-      { q: "Can I track costs and real revenue?", a: "Yes. A projected view estimates pipeline value from quotes, while the actuals view reflects paid invoices. Add food, labor, and misc costs per event to see true margin, not just top-line revenue." },
-      { q: "What about leads that don't convert?", a: "Archive them to keep your pipeline clean. Archived leads don't affect your stats or financials, and you can always bring them back if a client returns." },
-    ],
-  },
-];
 
 const REVENUE_BARS = [
   { label: "Jan", actual: 52, proj: 60 },
@@ -349,19 +336,7 @@ export default function HomePage() {
       </section>
 
 
-      {/* ── FAQ ── */}
-      <section id="faq" style={{ background: "#f7f5f2", borderTop: "1px solid #eeece6" }}>
-        <div style={{ maxWidth: 780, margin: "0 auto", padding: "84px 32px" }}>
-          <h2 data-animate style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 36, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 38px", color: "#161d1a", textAlign: "center" }}>
-            Frequently asked questions
-          </h2>
-          <div data-animate style={{ "--anim-delay": "80ms" } as CSSProperties}>
-            <FaqAccordion groups={HOME_FAQ} defaultOpen="g0-0" />
-          </div>
-        </div>
-      </section>
-
-      <CtaBand
+<CtaBand
         heading="Spend less time on admin,<br>more time in the kitchen."
         subtext="Join event businesses running their entire client lifecycle on Clientlify."
         btnLabel="Book a Demo"
