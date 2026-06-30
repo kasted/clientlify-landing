@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 642 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-1125.639874,-767.790961)">
+<svg width="100%" height="100%" viewBox="0 0 646 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1605.13114,-1132.253885)">
         <g>
-            <g transform="matrix(2.709992,0,0,2.709992,671.346208,-235.189487)">
-                <g transform="matrix(50,0,0,50,404.674337,406.104627)">
+            <g transform="matrix(1,0,0,1,483.424368,364.462923)">
+                <g transform="matrix(2.709992,0,0,2.709992,671.346208,-235.189487)">
+                    <g transform="matrix(50,0,0,50,404.674337,406.104627)">
+                    </g>
+                    <text x="226.324px" y="406.105px" style="font-family:'HostGrotesk-Bold', 'Host Grotesk', sans-serif;font-weight:700;font-size:50px;fill:white;">c<tspan x="252.574px 262.024px 271.474px 298.174px 324.724px 341.324px 350.774px 360.224px 375.174px " y="406.105px 406.105px 406.105px 406.105px 406.105px 406.105px 406.105px 406.105px 406.105px ">lientlify</tspan></text>
                 </g>
-                <text x="226.324px" y="406.105px" style="font-family:'HostGrotesk-Bold', 'Host Grotesk', sans-serif;font-weight:700;font-size:50px;fill:white;">c<tspan x="252.574px 262.024px 271.474px 298.174px 324.724px 341.324px 350.774px 360.224px 375.174px " y="406.105px 406.105px 406.105px 406.105px 406.105px 406.105px 406.105px 406.105px 406.105px ">lientlify</tspan></text>
             </g>
-            <g transform="matrix(0.283044,0,0,0.283044,967.442575,425.591282)">
-                <path d="M558.915,1608.975L558.915,1359L708.915,1359L708.915,1509L1008.915,1509L1008.915,1659L608.94,1659C595.672,1659 582.948,1653.73 573.567,1644.348C564.185,1634.967 558.915,1622.243 558.915,1608.975ZM858.915,1359L1008.915,1209L1008.915,1359L858.915,1359ZM708.915,1359L708.915,1209L858.915,1209L858.915,1359L708.915,1359Z" style="fill:rgb(180,220,25);"/>
+            <g transform="matrix(0.273333,0,0,0.273333,1452.36104,803.978688)">
+                <path d="M558.915,1425.71C558.915,1382.996 575.883,1342.032 606.086,1311.829C623.847,1294.068 644.033,1273.882 661.79,1256.125C691.964,1225.951 732.888,1209 775.56,1209L1008.915,1209L858.915,1359L708.915,1359L708.915,1509L1008.915,1509L1008.915,1584.233C1008.915,1625.526 975.441,1659 934.148,1659L633.682,1659C592.389,1659 558.915,1625.526 558.915,1584.233L558.915,1425.71Z" style="fill:rgb(180,220,25);"/>
             </g>
         </g>
     </g>
