@@ -54,7 +54,7 @@ export default function UseCasesPage() {
           Purpose-built for event service businesses
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 580 }}>
-          Whether you're serving tacos, delivering tents, or dropping off bounce houses, Clientlify handles the client side so you can focus on the work.
+          Whether you're serving tacos, delivering tents, or dropping off bounce houses, Clientlify is configured to fit your operation and handles the client side so you can focus on the work.
         </p>
       </section>
       </div>

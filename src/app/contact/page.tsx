@@ -28,7 +28,7 @@ export default function ContactPage() {
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "88px var(--page-gutter) 96px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1.3fr", gap: 80, alignItems: "start" }}>
 
-          {/* Left — info */}
+          {/* Left: info */}
           <div data-animate style={{ position: "sticky", top: 100 }}>
             <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
               {[
@@ -73,7 +73,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right — form */}
+          {/* Right: form */}
           <ContactForm />
         </div>
       </section>

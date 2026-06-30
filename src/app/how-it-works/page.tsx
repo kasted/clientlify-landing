@@ -19,7 +19,7 @@ export default function HowItWorksPage() {
           From first inquiry to final plate
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 600 }}>
-          Five steps take a lead all the way through. Clientlify handles the busywork between each one so you can stay in the kitchen.
+          Five steps take a lead all the way through, configured to your workflow. Clientlify handles the busywork between each one so you can stay in the kitchen.
         </p>
       </section>
       </div>
@@ -36,7 +36,7 @@ export default function HowItWorksPage() {
               A new lead arrives, fully detailed
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: 0 }}>
-              A client submits your web form, or you add them by hand. Contact info, event date, time, location, guest count, and special requests land in the pipeline as a New lead, and you get an instant alert.
+              A client submits your web form (built to the fields that matter for your business), or you add them by hand. Contact info, event date, time, location, guest count, and special requests land in the pipeline as a New lead, and you get an instant alert.
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
@@ -206,7 +206,7 @@ export default function HowItWorksPage() {
 
       <CtaBand
         heading="Run your next booking start to finish"
-        subtext="See the full workflow live with one of our team members."
+        subtext="See the full workflow live. We'll walk through it configured to your specific operation."
         btnLabel="Book a Demo"
       />
     </main>

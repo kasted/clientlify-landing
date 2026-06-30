@@ -11,8 +11,8 @@ const FAQ_GROUPS: FaqGroup[] = [
     title: "Getting started",
     items: [
       { q: "Is there a free trial?", a: "Yes, 14 days free and no credit card required. You get full access to every feature so you can see how it fits before committing." },
-      { q: "How long does setup take?", a: "Most businesses are live in under an hour. Add your branding, connect your payment processor, and drop the web form on your site. We walk through the whole thing in the onboarding demo." },
-      { q: "How do I get started?", a: "Book a demo and we'll walk you through the platform live. Most event businesses are fully set up the same day. Add your branding, drop the form on your site, and you're capturing leads." },
+      { q: "How long does setup take?", a: "Most businesses are live in under an hour. During onboarding we configure your form fields, pipeline stages, and branding to match your workflow, then connect your payment processor and drop the form on your site. We walk through the whole thing together." },
+      { q: "How do I get started?", a: "Book a demo and we'll walk you through the platform live. Most event businesses are fully set up the same day. We configure your form fields, pipeline stages, and branding to your workflow, then you're ready to capture leads." },
       { q: "How do leads get into Clientlify?", a: "Embed the customizable web form on your site and inquiries flow in automatically as New leads. You can also add leads manually for calls, referrals, or walk-ins. Every field is yours to configure." },
       { q: "Can I import my existing leads?", a: "Yes. Bring over your current inquiries and clients, and they'll slot straight into the pipeline with their statuses intact. Support can walk you through it in about ten minutes." },
     ],
@@ -20,7 +20,7 @@ const FAQ_GROUPS: FaqGroup[] = [
   {
     title: "Pipeline & leads",
     items: [
-      { q: "What are the pipeline stages?", a: "Every lead moves through New, Viewed, Quote Sent, and Approved. You always know where each one stands, and overdue follow-ups are flagged so nothing slips." },
+      { q: "What are the pipeline stages?", a: "During setup we configure the stages to match your process. The default flow is New, Viewed, Quote Sent, and Approved, but the labels and structure are set up around how you actually work. You always know where each lead stands, and overdue follow-ups are flagged so nothing slips." },
       { q: "How do overdue follow-up reminders work?", a: "Any lead that hasn't had activity in a set number of days gets flagged automatically. You'll see it highlighted in the pipeline so nothing goes cold without a reason." },
       { q: "Can multiple team members use Clientlify?", a: "Yes. You can add team members to your account and assign leads so it's always clear who owns the follow-up." },
       { q: "What happens to leads that don't convert?", a: "Archive them to keep your pipeline clean. Archived leads don't affect your stats or financials, and you can restore them any time a client comes back around." },

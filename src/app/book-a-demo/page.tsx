@@ -28,7 +28,7 @@ export default function BookADemoPage() {
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "88px var(--page-gutter) 96px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 80, alignItems: "start" }}>
 
-          {/* Left — pitch */}
+          {/* Left: pitch */}
           <div data-animate style={{ position: "sticky", top: 100 }}>
 
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 28, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 28px", color: "#161d1a" }}>
@@ -61,8 +61,8 @@ export default function BookADemoPage() {
                       <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
                     </svg>
                   ),
-                  title: "Tailored to your operation",
-                  body: "Tell us your business type when you book and we'll shape the demo around your specific workflow.",
+                  title: "Configured to your workflow",
+                  body: "Tell us your business type when you book and we'll shape the demo around your specific workflow. If it's a fit, we set up your form fields, pipeline stages, and branding before you go live.",
                 },
                 {
                   icon: (
@@ -71,7 +71,7 @@ export default function BookADemoPage() {
                     </svg>
                   ),
                   title: "Bring your questions",
-                  body: "Pricing, integrations, migrating from your current setup — we'll cover whatever's on your mind.",
+                  body: "Pricing, integrations, migrating from your current setup: we'll cover whatever's on your mind.",
                 },
                 {
                   icon: (
@@ -106,7 +106,7 @@ export default function BookADemoPage() {
 
           </div>
 
-          {/* Right — form */}
+          {/* Right: form */}
           <BookADemoForm />
         </div>
       </section>

@@ -20,12 +20,12 @@ export const metadata: Metadata = {
 const FEATURES = [
   {
     title: "Lead capture form",
-    body: "A customizable web form turns every inquiry into a tracked lead automatically. Add them by hand in seconds too.",
+    body: "Your intake form, built to your fields, not a generic template. Every inquiry becomes a tracked lead automatically, or add them by hand in seconds.",
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f503c" strokeWidth="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>,
   },
   {
     title: "Status pipeline",
-    body: "New, Viewed, Quote Sent, Approved. A single glance tells you where every lead stands and what to do next.",
+    body: "Pipeline stages built around your process. A single glance tells you where every lead stands and what to do next.",
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f503c" strokeWidth="2"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M6 8.5v7"/><path d="M9 6h7a2 2 0 0 1 2 2v3"/><path d="M15 9l3-1 1 3"/></svg>,
   },
   {
@@ -50,27 +50,30 @@ const FEATURES = [
   },
 ];
 
-const KANBAN = [
+const PIPELINE_STAGES = [
   {
-    name: "New", count: 4,
-    cards: [
-      { name: "Patel anniversary", meta: "Jul 09 · 40 guests", amount: "$3,200", initials: "JP", bg: "#eeece6", color: "#6b7771" },
-      { name: "Okafor baby shower", meta: "Jul 22 · 25 guests", amount: "$1,850", initials: "NO", bg: "#eeece6", color: "#6b7771" },
-    ],
+    n: "1",
+    title: "New lead",
+    body: "Inquiry lands and a tracked lead is created automatically.",
+    checks: ["Form submission captured", "Lead added to pipeline", "Instant email notification", "Ready to review & respond"],
   },
   {
-    name: "Quote sent", count: 5,
-    cards: [
-      { name: "Tran corporate lunch", meta: "Jul 02 · 60 guests", amount: "$4,400", initials: "RT", bg: "#fdf0e8", color: "#c2693f" },
-      { name: "Lim retirement", meta: "Jul 28 · 90 guests", amount: "$7,200", initials: "SL", bg: "#fdf0e8", color: "#c2693f" },
-    ],
+    n: "2",
+    title: "Quote sent",
+    body: "Build and send a branded, itemized quote in minutes.",
+    checks: ["Line-item quote builder", "Quote delivered to client", "Client views it online", "Follow-up reminder set"],
   },
   {
-    name: "Approved", count: 6,
-    cards: [
-      { name: "Alvarez wedding", meta: "Aug 14 · 120 guests", amount: "$8,400", initials: "AM", bg: "#ecf6c5", color: "#0b3d2e" },
-      { name: "Rooftop gala", meta: "Jul 04 · 150 guests", amount: "$11,900", initials: "RG", bg: "#ecf6c5", color: "#0b3d2e" },
-    ],
+    n: "3",
+    title: "Approved",
+    body: "Client says yes and the deposit is collected on the spot.",
+    checks: ["Client approves the quote", "Deposit invoice created", "Square payment processed", "Booking confirmed"],
+  },
+  {
+    n: "★",
+    title: "Event",
+    body: "Booking goes live and your calendar updates automatically.",
+    checks: ["Full event detail page", "Google Calendar synced", "Final invoice ready to send", "Post-event follow-up queued"],
   },
 ];
 
@@ -100,7 +103,7 @@ export default function HomePage() {
             Every lead, event, and invoice in one place.
           </h1>
           <p className="anim-hero-body" style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto 32px" }}>
-            Clientlify takes an inquiry from first form submission to post-event review. Pipeline tracking, quotes, deposits, events, and revenue, without the spreadsheet chaos.
+            Clientlify is set up around your workflow: your intake form, your pipeline stages, your business. Everything from first inquiry to post-event review, without the spreadsheet chaos.
           </p>
           <div className="anim-hero-cta" style={{ display: "flex", gap: 13, flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/book-a-demo" style={{ fontSize: 15.5, fontWeight: 600, color: "#0f503c", background: "#b4dc19", padding: "14px 26px", borderRadius: 11, boxShadow: "0 10px 28px -8px rgba(100,130,0,.35)" }}>
@@ -201,7 +204,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS (stepper + kanban) ── */}
+      {/* ── HOW IT WORKS (pipeline) ── */}
       <section id="how" style={{ background: "#f7f5f2", borderTop: "1px solid #eeece6", borderBottom: "1px solid #eeece6" }}>
         <div style={{ maxWidth: 1440, margin: "0 auto", padding: "84px var(--page-gutter)" }}>
           <div data-animate style={{ textAlign: "center", maxWidth: 620, margin: "0 auto 52px" }}>
@@ -210,59 +213,43 @@ export default function HomePage() {
               A clear path from inquiry to event
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.55, color: "#566159", margin: 0 }}>
-              Every lead moves through the same four stages, so nothing slips and you always know what needs attention.
+              Every lead moves through stages configured to your process, so nothing slips and you always know what needs attention.
             </p>
           </div>
 
-          {/* Stepper */}
-          <div style={{ display: "flex", alignItems: "stretch", gap: 0, marginBottom: 42, flexWrap: "wrap", justifyContent: "center" }}>
-            {[
-              { n: "1", title: "New lead", body: "Inquiry lands from your form" },
-              { n: "2", title: "Quote sent", body: "Branded quote goes out" },
-              { n: "3", title: "Approved", body: "Deposit collected" },
-              { n: "★", title: "Event", body: "Booking goes live" },
-            ].map((s, i) => (
-              <div key={s.n} style={{ display: "flex", alignItems: "center" }}>
-                <div data-animate style={{ "--anim-delay": `${i * 70}ms`, background: "#fff", border: "1px solid #e5e3db", borderRadius: 13, padding: "16px 20px", minWidth: 158 } as CSSProperties}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 7 }}>
-                    <span style={{ width: 24, height: 24, borderRadius: 7, background: "#0f503c", color: "#f7f5f2", fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 12, display: "flex", alignItems: "center", justifyContent: "center" }}>{s.n}</span>
-                    <span style={{ fontWeight: 700, fontSize: 14.5, color: "#161d1a" }}>{s.title}</span>
+          {/* Pipeline cards */}
+          <div className="pipeline-row">
+            {PIPELINE_STAGES.map((s, i) => (
+              <div key={s.n} style={{ display: "contents" }}>
+                <div
+                  data-animate
+                  style={{ "--anim-delay": `${[0, 200, 400, 800][i]}ms`, flex: 1, background: "#fff", border: "1px solid #e5e3db", borderRadius: 16, padding: "26px 24px", boxShadow: "0 8px 32px -12px rgba(20,40,32,.13)" } as CSSProperties}
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                    <span style={{ width: 30, height: 30, borderRadius: 9, background: "#0f503c", color: "#f7f5f2", fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 13, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{s.n}</span>
+                    <span style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 16.5, color: "#161d1a" }}>{s.title}</span>
                   </div>
-                  <div style={{ fontSize: 12.5, color: "#7c8a83", lineHeight: 1.45 }}>{s.body}</div>
-                </div>
-                {i < 3 && (
-                  <svg width="30" height="16" viewBox="0 0 30 16" fill="none" style={{ flexShrink: 0 }}>
-                    <path d="M2 8h24M21 3l5 5-5 5" stroke="#c4c9b8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Kanban */}
-          <div data-animate style={{ "--anim-delay": "200ms", background: "#fff", border: "1px solid #e5e3db", borderRadius: 18, padding: 22, boxShadow: "0 30px 60px -34px rgba(20,40,32,.25)" } as CSSProperties}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 14 }}>
-              {KANBAN.map((col) => (
-                <div key={col.name}>
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 11, padding: "0 2px" }}>
-                    <span style={{ fontWeight: 700, fontSize: 13, color: "#161d1a" }}>{col.name}</span>
-                    <span style={{ fontSize: 11, fontWeight: 600, color: "#9aa8a1", background: "#f2f0ea", padding: "2px 8px", borderRadius: 20 }}>{col.count}</span>
-                  </div>
+                  <p style={{ fontSize: 13, lineHeight: 1.55, color: "#566159", margin: "0 0 18px" }}>{s.body}</p>
                   <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
-                    {col.cards.map((card) => (
-                      <div key={card.name} style={{ border: "1px solid #eeece6", borderRadius: 11, padding: "12px 13px", background: "#f9f8f4" }}>
-                        <div style={{ fontSize: 12.5, fontWeight: 600, color: "#161d1a", marginBottom: 4 }}>{card.name}</div>
-                        <div style={{ fontSize: 11, color: "#8b9790", marginBottom: 9 }}>{card.meta}</div>
-                        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                          <span style={{ fontSize: 11, fontWeight: 700, color: "#1a211e" }}>{card.amount}</span>
-                          <span style={{ width: 20, height: 20, borderRadius: 6, background: card.bg, color: card.color, fontSize: 10, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{card.initials}</span>
-                        </div>
+                    {s.checks.map((c) => (
+                      <div key={c} style={{ display: "flex", alignItems: "flex-start", gap: 9 }}>
+                        <span style={{ flexShrink: 0, width: 17, height: 17, borderRadius: "50%", background: "#ecf6c5", display: "flex", alignItems: "center", justifyContent: "center", marginTop: 1 }}>
+                          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#0b3d2e" strokeWidth="3.5"><path d="M5 13l4 4L19 7" /></svg>
+                        </span>
+                        <span style={{ fontSize: 13, color: "#3a443e", lineHeight: 1.45 }}>{c}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-              ))}
-            </div>
+                {i < 3 && (
+                  <div className="pipeline-arrow">
+                    <svg width="38" height="22" viewBox="0 0 38 22" fill="none">
+                      <path d="M2 11h30M25 4l9 7-9 7" stroke="#0f503c" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -292,14 +279,14 @@ export default function HomePage() {
             ))}
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
-            {/* Photo — 1:1 */}
+            {/* Photo */}
             <div style={{ borderRadius: 18, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.32)", aspectRatio: "1 / 1" }}>
               <video autoPlay muted loop playsInline preload="none" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}>
                 <source src="/home-numbers.mp4" type="video/mp4" />
               </video>
               <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 180, borderRadius: "0 0 18px 18px", background: "linear-gradient(to top, rgba(10,30,18,.72) 0%, transparent 100%)" }} />
             </div>
-            {/* Revenue chart card — hangs off bottom-right corner */}
+            {/* Revenue chart card */}
             <div className="pop-card" style={{ position: "absolute", bottom: -22, right: -22, width: 255, background: "#fff", border: "1px solid #e5e3db", borderRadius: 15, padding: "16px 18px", boxShadow: "0 21px 45px -14px rgba(10,30,18,.48)" }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
                 <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 13, color: "#161d1a" }}>Revenue</div>
@@ -338,7 +325,7 @@ export default function HomePage() {
 
 <CtaBand
         heading="Spend less time on admin,<br>more time in the kitchen."
-        subtext="Join event businesses running their entire client lifecycle on Clientlify."
+        subtext="We configure it around your workflow. Then you run your entire client lifecycle from one place."
         btnLabel="Book a Demo"
       />
     </main>

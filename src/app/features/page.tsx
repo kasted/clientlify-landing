@@ -38,7 +38,7 @@ export default function FeaturesPage() {
           Everything you need to run your event business, end to end
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 600 }}>
-          One dashboard for the entire client lifecycle: capture, quote, book, deliver, and follow up, with the numbers that keep you profitable.
+          One dashboard for the entire client lifecycle, configured around your operation: capture, quote, book, deliver, and follow up, with the numbers that keep you profitable.
         </p>
       </section>
       </div>
@@ -79,10 +79,10 @@ export default function FeaturesPage() {
               Turn every inquiry into a tracked lead
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 14px" }}>
-              Embed a customizable web form on your site and inquiries flow straight into your pipeline: contact info, event date, guest count, and special requests captured automatically. Or add walk-ins and phone leads by hand in seconds.
+              Embed a form built to your fields on your site and inquiries flow straight into your pipeline: contact info, event date, guest count, and whatever special requests matter to your business, captured automatically. Or add walk-ins and phone leads by hand in seconds.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
-              <Bullet text="Customizable fields and branding to match your business" />
+              <Bullet text="Form fields, stages, and branding configured to match your business" />
               <Bullet text="Instant push and email alerts the moment a lead lands" />
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function FeaturesPage() {
               Always know where every lead stands
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 14px" }}>
-              Every lead moves through New, Viewed, Quote Sent, and Approved. Drag between stages, spot leads overdue for follow-up, and archive the ones that don&apos;t convert, without touching your stats.
+              Pipeline stages configured to your process. Drag between stages, spot leads overdue for follow-up, and archive the ones that don&apos;t convert, without touching your stats.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
               <Bullet text="Overdue-for-follow-up flags so nothing slips" />
@@ -198,7 +198,7 @@ export default function FeaturesPage() {
             </div>
           </div>
 
-          {/* ── Revenue — full-width featured row ── */}
+          {/* ── Revenue: full-width featured row ── */}
           <div data-animate style={{ gridColumn: "1 / -1", background: "#f7f5f2", border: "1px solid #eeece6", borderRadius: 22, padding: "44px 48px" } as CSSProperties}>
             <div style={{ display: "grid", gridTemplateColumns: "1.15fr 1fr", gap: "0 56px", alignItems: "center" }}>
               <div style={{ position: "relative" }}>
