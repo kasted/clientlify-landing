@@ -45,7 +45,7 @@ export default function FeaturesPage() {
 
       {/* 2-col feature grid */}
       <section style={{ maxWidth: 1280, margin: "0 auto", padding: "88px var(--page-gutter) 96px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "52px 44px" }}>
+        <div className="features-main-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "52px 44px" }}>
 
           {/* ── Capture ── */}
           <div data-animate>
@@ -199,8 +199,8 @@ export default function FeaturesPage() {
           </div>
 
           {/* ── Revenue: full-width featured row ── */}
-          <div data-animate style={{ gridColumn: "1 / -1", background: "#f7f5f2", border: "1px solid #eeece6", borderRadius: 22, padding: "44px 48px" } as CSSProperties}>
-            <div style={{ display: "grid", gridTemplateColumns: "1.15fr 1fr", gap: "0 56px", alignItems: "center" }}>
+          <div data-animate className="features-revenue-row" style={{ gridColumn: "1 / -1", background: "#f7f5f2", border: "1px solid #eeece6", borderRadius: 22, padding: "44px 48px" } as CSSProperties}>
+            <div className="features-revenue-inner" style={{ display: "grid", gridTemplateColumns: "1.15fr 1fr", gap: "0 56px", alignItems: "center" }}>
               <div style={{ position: "relative" }}>
                 <div style={{ position: "relative", height: 340, borderRadius: 16, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)" }}>
                   <Image src="/ft-5.jpg" alt="Feature 5" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />

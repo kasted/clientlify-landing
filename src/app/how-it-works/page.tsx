@@ -26,7 +26,7 @@ export default function HowItWorksPage() {
 
       {/* Step 1 */}
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "88px var(--page-gutter)" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
+        <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
           <div data-animate>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
               <span style={{ width: 30, height: 30, borderRadius: 9, background: "#0f503c", color: "#f7f5f2", fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>1</span>
@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
       {/* Step 2 */}
       <section style={{ background: "#f7f5f2", borderTop: "1px solid #eeece6", borderBottom: "1px solid #eeece6" }}>
         <div style={{ maxWidth: 1440, margin: "0 auto", padding: "64px var(--page-gutter)" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
+          <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
             <div data-animate style={{ position: "relative" } as CSSProperties}>
               <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
                 <Image src="/how-2.jpg" alt="Menu and quote" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
@@ -97,7 +97,7 @@ export default function HowItWorksPage() {
 
       {/* Step 3 */}
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "64px var(--page-gutter)" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
+        <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
           <div data-animate>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
               <span style={{ width: 30, height: 30, borderRadius: 9, background: "#0f503c", color: "#f7f5f2", fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>3</span>
@@ -132,7 +132,7 @@ export default function HowItWorksPage() {
       {/* Step 4 */}
       <section style={{ background: "#f7f5f2", borderTop: "1px solid #eeece6", borderBottom: "1px solid #eeece6" }}>
         <div style={{ maxWidth: 1440, margin: "0 auto", padding: "64px var(--page-gutter)" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
+          <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
             <div data-animate style={{ position: "relative" } as CSSProperties}>
               <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
                 <Image src="/how-4.jpg" alt="Live event" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
@@ -172,7 +172,7 @@ export default function HowItWorksPage() {
 
       {/* Step 5 */}
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "64px var(--page-gutter) 40px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
+        <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
           <div data-animate>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
               <span style={{ width: 30, height: 30, borderRadius: 9, background: "#ecf6c5", color: "#0b3d2e", fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>5</span>

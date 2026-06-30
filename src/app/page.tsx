@@ -93,7 +93,7 @@ export default function HomePage() {
     <main style={{ fontFamily: "var(--font-hanken, Hanken Grotesk), system-ui, sans-serif" }}>
 
       {/* ── HERO ── */}
-      <div style={{ background: "#0f503c", paddingBottom: 270 }}>
+      <div className="hero-green-bg" style={{ background: "#0f503c", paddingBottom: 270 }}>
         <section style={{ maxWidth: 880, margin: "0 auto", padding: "72px var(--page-gutter) 96px", textAlign: "center" }}>
           <div className="anim-hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(180,220,25,.18)", color: "#b4dc19", padding: "7px 14px", borderRadius: 30, fontSize: 13, fontWeight: 600, marginBottom: 24 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#b4dc19", display: "block" }} />
@@ -117,7 +117,7 @@ export default function HomePage() {
       </div>
 
       {/* ── HERO COLLAGE ── */}
-      <section style={{ maxWidth: 1440, margin: "-270px auto 0", padding: "0 var(--page-gutter) 96px" }}>
+      <section className="hero-collage-section" style={{ maxWidth: 1440, margin: "-270px auto 0", padding: "0 var(--page-gutter) 96px" }}>
         <div className="anim-hero-collage" style={{ position: "relative" }}>
           <HeroVideo />
           {/* Left card */}
@@ -256,7 +256,7 @@ export default function HomePage() {
 
       {/* ── REVENUE SECTION ── */}
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "90px var(--page-gutter)" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.15fr", gap: 60, alignItems: "center" }}>
+        <div className="home-revenue-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1.15fr", gap: 60, alignItems: "center" }}>
           <div data-animate>
             <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: ".04em", textTransform: "uppercase", color: "#0f503c", marginBottom: 14 }}>Know your numbers</div>
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 38, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 18px", color: "#161d1a" }}>

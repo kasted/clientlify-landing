@@ -61,7 +61,7 @@ export default function UseCasesPage() {
 
       {/* Taco Catering */}
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "88px var(--page-gutter)" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
+        <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
           <div data-animate>
             <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: ".04em", textTransform: "uppercase", color: "#0f503c", marginBottom: 16 }}>Taco Catering</div>
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 36, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 16px", color: "#161d1a" }}>
@@ -106,7 +106,7 @@ export default function UseCasesPage() {
       {/* Party Rentals */}
       <section style={{ background: "#f7f5f2", borderTop: "1px solid #eeece6", borderBottom: "1px solid #eeece6" }}>
         <div style={{ maxWidth: 1440, margin: "0 auto", padding: "88px var(--page-gutter)" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
+          <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
             <div data-animate style={{ position: "relative" } as CSSProperties}>
               <div style={{ position: "relative", height: 420, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
                 <Image src="/use-2.jpg" alt="Party rental equipment" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
@@ -153,7 +153,7 @@ export default function UseCasesPage() {
 
       {/* Jumper Rental */}
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "64px var(--page-gutter) 40px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
+        <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 64, alignItems: "center" }}>
           <div data-animate>
             <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: ".04em", textTransform: "uppercase", color: "#0f503c", marginBottom: 16 }}>Jumper Rental</div>
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 36, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 16px", color: "#161d1a" }}>

@@ -371,6 +371,7 @@ export default function IntegrationsPage() {
         </div>
 
         <div
+          className="intg-live-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(2, 1fr)",
@@ -425,6 +426,7 @@ export default function IntegrationsPage() {
         </div>
 
         <div
+          className="intg-soon-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",

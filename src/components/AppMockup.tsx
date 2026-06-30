@@ -1,6 +1,7 @@
 export default function AppMockup() {
   return (
     <div
+      className="appmock-root"
       style={{
         width: "100%",
         height: "100%",
@@ -62,6 +63,7 @@ export default function AppMockup() {
       <div style={{ display: "flex", flex: 1, minHeight: 0 }}>
         {/* Sidebar */}
         <div
+          className="appmock-sidebar"
           style={{
             width: 62,
             flexShrink: 0,
@@ -116,7 +118,7 @@ export default function AppMockup() {
         </div>
 
         {/* Main content */}
-        <div style={{ flex: 1, padding: "18px 20px", minWidth: 0, display: "flex", flexDirection: "column", gap: 14 }}>
+        <div className="appmock-main" style={{ flex: 1, padding: "18px 20px", minWidth: 0, display: "flex", flexDirection: "column", gap: 14 }}>
           {/* Header */}
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexShrink: 0 }}>
             <div>
@@ -130,7 +132,7 @@ export default function AppMockup() {
           </div>
 
           {/* Stats */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10, flexShrink: 0 }}>
+          <div className="appmock-stats" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10, flexShrink: 0 }}>
             {[
               { label: "Active pipeline", value: "22", color: "#1a211e" },
               { label: "Paid this month", value: "$31.4k", color: "#1a211e" },
@@ -145,7 +147,7 @@ export default function AppMockup() {
           </div>
 
           {/* Cards grid */}
-          <div style={{ display: "grid", gridTemplateColumns: "1.35fr 1fr", gap: 12, flex: 1, minHeight: 0 }}>
+          <div className="appmock-cards" style={{ display: "grid", gridTemplateColumns: "1.35fr 1fr", gap: 12, flex: 1, minHeight: 0 }}>
             {/* Pipeline */}
             <div style={{ border: "1px solid #eeece6", borderRadius: 12, padding: "13px 14px", display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 11, flexShrink: 0 }}>
@@ -174,7 +176,7 @@ export default function AppMockup() {
             </div>
 
             {/* Right column */}
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            <div className="appmock-right" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {/* Upcoming events */}
               <div style={{ border: "1px solid #eeece6", borderRadius: 12, padding: "13px 14px", flex: 1 }}>
                 <div style={{ fontWeight: 700, fontSize: 13, color: "#1a211e", marginBottom: 11 }}>Upcoming events</div>

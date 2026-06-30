@@ -15,6 +15,7 @@ export default function CtaBand({
     <section style={{ maxWidth: 1440, margin: "0 auto", padding: "40px var(--page-gutter) 84px" }}>
       <div
         data-animate
+        className="cta-band-inner"
         style={{
           borderRadius: 24,
           padding: "88px 48px",

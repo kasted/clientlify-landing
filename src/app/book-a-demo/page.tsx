@@ -26,10 +26,10 @@ export default function BookADemoPage() {
       </div>
 
       <section style={{ maxWidth: 1440, margin: "0 auto", padding: "88px var(--page-gutter) 96px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 80, alignItems: "start" }}>
+        <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1.1fr", gap: 80, alignItems: "start" }}>
 
           {/* Left: pitch */}
-          <div data-animate style={{ position: "sticky", top: 100 }}>
+          <div data-animate className="page-sticky-col" style={{ position: "sticky", top: 100 }}>
 
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 28, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 28px", color: "#161d1a" }}>
               What to expect

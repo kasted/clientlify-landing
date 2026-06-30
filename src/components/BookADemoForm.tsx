@@ -119,7 +119,7 @@ export default function BookADemoForm() {
       data-animate
       style={{ "--anim-delay": "120ms", display: "flex", flexDirection: "column", gap: 20, background: "#fff", border: "1px solid #e5e3db", borderRadius: 20, padding: "36px 32px", boxShadow: "0 20px 50px -24px rgba(20,40,32,.14)" } as React.CSSProperties}
     >
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+      <div className="form-field-pair" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <Field label="First name">
           <input required style={inputStyle} value={form.firstName} onChange={(e) => set("firstName", e.target.value)} placeholder="First name" />
         </Field>
@@ -136,7 +136,7 @@ export default function BookADemoForm() {
         <input type="url" style={inputStyle} value={form.website} onChange={(e) => set("website", e.target.value)} placeholder="https://yoursite.com" />
       </Field>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+      <div className="form-field-pair" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <Field label="Work email">
           <input required type="email" style={inputStyle} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@yourbusiness.com" />
         </Field>
@@ -152,7 +152,7 @@ export default function BookADemoForm() {
         </select>
       </Field>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+      <div className="form-field-pair" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <Field label="Events per month">
           <select required style={selectStyle} value={form.eventsPerMonth} onChange={(e) => set("eventsPerMonth", e.target.value)}>
             <option value="">Select a range…</option>
@@ -167,7 +167,7 @@ export default function BookADemoForm() {
         </Field>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+      <div className="form-field-pair" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
         <Field label="When are you looking to start?">
           <select required style={selectStyle} value={form.whenToStart} onChange={(e) => set("whenToStart", e.target.value)}>
             <option value="">Select one…</option>

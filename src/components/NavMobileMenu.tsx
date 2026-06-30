@@ -8,64 +8,62 @@ type NavLink = { href: string; label: string };
 
 export default function NavMobileMenu({ links }: { links: NavLink[] }) {
   const [open, setOpen] = useState(false);
+  const [animKey, setAnimKey] = useState(0);
+
+  const openMenu = () => {
+    setOpen(true);
+    setAnimKey((k) => k + 1);
+  };
+  const closeMenu = () => setOpen(false);
 
   return (
     <>
       <button
-        onClick={() => setOpen((o) => !o)}
+        onClick={open ? closeMenu : openMenu}
         style={{ background: "none", border: "none", cursor: "pointer", padding: 4 }}
         className="nav-mobile-btn"
-        aria-label="Toggle menu"
+        aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
       >
-        {open ? <X size={22} color="#f7f5f2" /> : <Menu size={22} color="#f7f5f2" />}
+        {open ? (
+          <X size={22} color="#f7f5f2" className="nav-close-icon" />
+        ) : (
+          <Menu size={22} color="#f7f5f2" />
+        )}
       </button>
 
-      {open && (
-        <div
-          style={{
-            background: "#0b3d2e",
-            padding: "20px 32px 28px",
-            display: "flex",
-            flexDirection: "column",
-            gap: 4,
-          }}
-          className="nav-mobile-menu"
-        >
-          {links.map((l) => (
+      <div
+        className={`nav-mobile-backdrop${open ? " is-open" : ""}`}
+        onClick={closeMenu}
+        aria-hidden="true"
+      />
+
+      <div
+        className={`nav-mobile-drawer${open ? " is-open" : ""}`}
+        aria-hidden={!open}
+      >
+        <div key={animKey} className="nav-mobile-items">
+          {links.map((l, i) => (
             <Link
               key={l.href}
               href={l.href}
-              onClick={() => setOpen(false)}
-              style={{
-                padding: "10px 0",
-                fontSize: 15,
-                fontWeight: 600,
-                color: "rgba(247,245,242,.75)",
-                borderBottom: "1px solid rgba(247,245,242,.1)",
-              }}
+              onClick={closeMenu}
+              className="nav-mobile-item"
+              style={{ "--item-i": i } as React.CSSProperties}
             >
               {l.label}
             </Link>
           ))}
           <Link
             href="/book-a-demo"
-            onClick={() => setOpen(false)}
-            style={{
-              marginTop: 16,
-              display: "block",
-              textAlign: "center",
-              background: "#b4dc19",
-              color: "#0f503c",
-              padding: "12px 20px",
-              borderRadius: 10,
-              fontWeight: 600,
-              fontSize: 15,
-            }}
+            onClick={closeMenu}
+            className="nav-mobile-cta"
+            style={{ "--item-i": links.length } as React.CSSProperties}
           >
             Book a Demo
           </Link>
         </div>
-      )}
+      </div>
     </>
   );
 }

@@ -20,6 +20,8 @@ export default function SiteNav() {
       style={{
         background: "#0f503c",
         fontFamily: "var(--font-hanken, Hanken Grotesk), system-ui, sans-serif",
+        position: "relative",
+        zIndex: 100,
       }}
     >
       <nav
