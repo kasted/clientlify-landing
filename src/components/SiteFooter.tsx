@@ -20,7 +20,7 @@ export default function SiteFooter() {
             <img src="/logo-light.svg" alt="Clientlify" height={28} style={{ display: "block" }} />
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.55, color: "#7c8a83", margin: 0, maxWidth: 280 }}>
-            The client lifecycle platform built for event service businesses.
+            Built by an operator, for event service businesses.
           </p>
         </div>
 

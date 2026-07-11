@@ -99,9 +99,7 @@ a {
   .hero-card-left, .hero-card-right, .hero-card-bottom { display: none !important; }
 
   /* Homepage hero */
-  .anim-hero-heading { font-size: 40px !important; line-height: 1.1 !important; }
-  .hero-green-bg { padding-bottom: 32px !important; }
-  .hero-collage-section { margin-top: 0 !important; padding: 0 var(--page-gutter) 56px !important; }
+  .anim-hero-heading { font-size: 36px !important; line-height: 1.15 !important; }
   .home-revenue-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
 
   /* Inner page heroes */
@@ -246,6 +244,36 @@ a {
   font-size: 18px;
   animation: menu-item-slide 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: calc(var(--item-i, 0) * 65ms + 90ms);
+}
+
+/* ── Homepage hero 2-col layout ── */
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  padding: 64px var(--page-gutter) 72px;
+}
+.hero-text-col {
+  max-width: 560px;
+}
+.hero-video-col {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 60px var(--page-gutter) 90px;
+  }
+  .hero-text-col {
+    width: 100%;
+  }
+  .hero-video-col {
+    width: 100%;
+  }
 }
 
 /* Features + dashboard layout */

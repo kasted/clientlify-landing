@@ -2,10 +2,10 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Contact | Clientlify",
-  description: "Have a question about Clientlify? Reach out and a real person will get back to you, usually the same day.",
+  description: "No chatbot, no ticket queue. Reach out and a real person on our small team will get back to you within one business day.",
   openGraph: {
     title: "Contact | Clientlify",
-    description: "Have a question about Clientlify? Reach out and a real person will get back to you, usually the same day.",
+    description: "No chatbot, no ticket queue. A real person will get back to you within one business day.",
   },
 };
 
@@ -17,7 +17,7 @@ export default function ContactPage() {
       <div style={{ background: "#0f503c" }}>
         <section className="anim-page-hero" style={{ maxWidth: 780, margin: "0 auto", padding: "96px 32px 88px", textAlign: "center" }}>
           <h1 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 44, lineHeight: 1.07, letterSpacing: "-.025em", margin: "0 0 18px", color: "#f7f5f2" }}>
-            Get in touch
+            No chatbot. No ticket queue. Just us.
           </h1>
           <p style={{ fontSize: 16.5, lineHeight: 1.65, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 600 }}>
             Have a question about Clientlify? Want to report an issue or give feedback? We&apos;re a small team and we read every message.

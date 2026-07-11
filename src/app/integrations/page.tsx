@@ -4,7 +4,7 @@ import type { CSSProperties } from "react";
 
 export const metadata = {
   title: "Integrations | Clientlify",
-  description: "Connect Clientlify to Square, Google Calendar, Stripe, PayPal, and more, with new integrations always on the way.",
+  description: "Stop copying the same booking into five different tools. Connect Clientlify to Square, Google Calendar, Stripe, PayPal, and more.",
 };
 
 const LIVE: Integration[] = [
@@ -321,7 +321,7 @@ export default function IntegrationsPage() {
               color: "#f7f5f2",
             }}
           >
-            Plays well with the tools you already use
+            Stop copying the same booking into five different tools
           </h1>
           <p
             style={{

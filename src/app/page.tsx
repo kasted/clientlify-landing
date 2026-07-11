@@ -9,10 +9,10 @@ import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Clientlify | Client Management for Event Businesses",
-  description: "Capture leads, send quotes, collect deposits, and manage events, all in one place. Built for catering, rentals, and every event-based business.",
+  description: "Run your whole event business without the spreadsheet chaos. Capture leads, send quotes, collect deposits, and manage events, all in one place, configured to your workflow.",
   openGraph: {
     title: "Clientlify | Client Management for Event Businesses",
-    description: "Capture leads, send quotes, collect deposits, and manage events, all in one place.",
+    description: "Capture leads, send quotes, collect deposits, and manage events, all in one place, configured to your workflow.",
   },
   alternates: { canonical: "https://clientlify.com" },
 };
@@ -93,77 +93,76 @@ export default function HomePage() {
     <main style={{ fontFamily: "var(--font-hanken, Hanken Grotesk), system-ui, sans-serif" }}>
 
       {/* ── HERO ── */}
-      <div className="hero-green-bg" style={{ background: "#0f503c", paddingBottom: 270 }}>
-        <section style={{ maxWidth: 880, margin: "0 auto", padding: "72px var(--page-gutter) 96px", textAlign: "center" }}>
-          <div className="anim-hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(180,220,25,.18)", color: "#b4dc19", padding: "7px 14px", borderRadius: 30, fontSize: 13, fontWeight: 600, marginBottom: 24 }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#b4dc19", display: "block" }} />
-            Built for event service businesses
+      <div className="hero-green-bg" style={{ background: "#0f503c" }}>
+        <section className="hero-grid" style={{ maxWidth: 1440, margin: "0 auto" }}>
+          <div className="hero-text-col">
+            <div className="anim-hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(180,220,25,.18)", color: "#b4dc19", padding: "7px 14px", borderRadius: 30, fontSize: 13, fontWeight: 600, marginBottom: 24 }}>
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#b4dc19", display: "block" }} />
+              Built for event service businesses
+            </div>
+            <h1 className="anim-hero-heading" style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 52, lineHeight: 1.06, letterSpacing: "-.025em", margin: "0 0 22px", color: "#f7f5f2" }}>
+              Run your whole event business without the spreadsheet chaos.
+            </h1>
+            <p className="anim-hero-body" style={{ fontSize: 18, lineHeight: 1.6, color: "rgba(247,245,242,.72)", margin: "0 0 32px", maxWidth: 480 }}>
+              Clientlify is set up around your workflow, not a generic template: your intake form, your pipeline stages, your business. Capture leads, send quotes, collect deposits, and book the event, from first inquiry to post-event follow-up, without duct-taping five tools together.
+            </p>
+            <div className="anim-hero-cta" style={{ display: "flex", gap: 13, flexWrap: "wrap" }}>
+              <Link href="/book-a-demo" style={{ fontSize: 15.5, fontWeight: 600, color: "#0f503c", background: "#b4dc19", padding: "14px 26px", borderRadius: 11, boxShadow: "0 10px 28px -8px rgba(100,130,0,.35)" }}>
+                Book a Demo
+              </Link>
+              <Link href="/how-it-works" style={{ fontSize: 15.5, fontWeight: 600, color: "#f7f5f2", background: "rgba(247,245,242,.1)", border: "1px solid rgba(247,245,242,.18)", padding: "14px 26px", borderRadius: 11 }}>
+                See how it works
+              </Link>
+            </div>
           </div>
-          <h1 className="anim-hero-heading" style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 60, lineHeight: 1.03, letterSpacing: "-.025em", margin: "0 0 22px", color: "#f7f5f2" }}>
-            Every lead, event, and invoice in one place.
-          </h1>
-          <p className="anim-hero-body" style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto 32px" }}>
-            Clientlify is set up around your workflow: your intake form, your pipeline stages, your business. Everything from first inquiry to post-event review, without the spreadsheet chaos.
-          </p>
-          <div className="anim-hero-cta" style={{ display: "flex", gap: 13, flexWrap: "wrap", justifyContent: "center" }}>
-            <Link href="/book-a-demo" style={{ fontSize: 15.5, fontWeight: 600, color: "#0f503c", background: "#b4dc19", padding: "14px 26px", borderRadius: 11, boxShadow: "0 10px 28px -8px rgba(100,130,0,.35)" }}>
-              Book a Demo
-            </Link>
-            <Link href="/how-it-works" style={{ fontSize: 15.5, fontWeight: 600, color: "#f7f5f2", background: "rgba(247,245,242,.1)", border: "1px solid rgba(247,245,242,.18)", padding: "14px 26px", borderRadius: 11 }}>
-              See how it works
-            </Link>
+
+          <div className="hero-video-col anim-hero-collage" style={{ position: "relative" }}>
+            <HeroVideo />
+            {/* Left card */}
+            <div className="hero-card-left" style={{ position: "absolute", left: -18, top: 36, width: 212, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "14px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.4)" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 9 }}>
+                <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#0f503c", display: "block" }} />
+                <span style={{ fontSize: 11.5, fontWeight: 600, color: "#7c8a83" }}>New lead · just now</span>
+              </div>
+              <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 15, color: "#161d1a" }}>Alvarez wedding</div>
+              <div style={{ fontSize: 12, color: "#8b9790", marginTop: 1 }}>120 guests · Aug 14</div>
+              <div style={{ marginTop: 11, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <span style={{ fontSize: 13, fontWeight: 700, color: "#161d1a" }}>$8,400</span>
+                <span style={{ fontSize: 10.5, fontWeight: 700, color: "#0b3d2e", background: "#ecf6c5", padding: "3px 9px", borderRadius: 20 }}>Approved</span>
+              </div>
+            </div>
+            {/* Right card */}
+            <div className="hero-card-right" style={{ position: "absolute", right: -18, top: 96, width: 196, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "15px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.4)" }}>
+              <div style={{ fontSize: 11, color: "#8b9790", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".02em", marginBottom: 6 }}>Paid this month</div>
+              <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 26, color: "#161d1a", letterSpacing: "-.02em" }}>$24,800</div>
+              <div style={{ marginTop: 10, display: "flex", alignItems: "flex-end", gap: 4, height: 34 }}>
+                {[44, 62, 50, 82, 100].map((h, i) => (
+                  <span key={i} style={{ flex: 1, background: h > 70 ? "#0f503c" : "#dbd8d0", borderRadius: "3px 3px 0 0", height: `${h}%`, display: "block" }} />
+                ))}
+              </div>
+            </div>
+            {/* Bottom card */}
+            <div className="hero-card-bottom" style={{ position: "absolute", left: 40, bottom: -26, width: 260, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "14px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.4)" }}>
+              <div style={{ fontSize: 11.5, fontWeight: 700, color: "#161d1a", marginBottom: 11 }}>Lead pipeline</div>
+              <div style={{ display: "flex", gap: 7 }}>
+                {[{ n: 4, label: "New", color: "#6b7771" }, { n: 5, label: "Quoted", color: "#c2693f" }, { n: 6, label: "Approved", color: "#0b3d2e" }].map((s) => (
+                  <div key={s.label} style={{ flex: 1, textAlign: "center" }}>
+                    <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 16, color: s.color }}>{s.n}</div>
+                    <div style={{ fontSize: 9.5, color: "#9aa8a1", fontWeight: 600 }}>{s.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
       </div>
-
-      {/* ── HERO COLLAGE ── */}
-      <section className="hero-collage-section" style={{ maxWidth: 1440, margin: "-270px auto 0", padding: "0 var(--page-gutter) 96px" }}>
-        <div className="anim-hero-collage" style={{ position: "relative" }}>
-          <HeroVideo />
-          {/* Left card */}
-          <div className="hero-card-left" style={{ position: "absolute", left: -18, top: 36, width: 212, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "14px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.4)" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 9 }}>
-              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#0f503c", display: "block" }} />
-              <span style={{ fontSize: 11.5, fontWeight: 600, color: "#7c8a83" }}>New lead · just now</span>
-            </div>
-            <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 15, color: "#161d1a" }}>Alvarez wedding</div>
-            <div style={{ fontSize: 12, color: "#8b9790", marginTop: 1 }}>120 guests · Aug 14</div>
-            <div style={{ marginTop: 11, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <span style={{ fontSize: 13, fontWeight: 700, color: "#161d1a" }}>$8,400</span>
-              <span style={{ fontSize: 10.5, fontWeight: 700, color: "#0b3d2e", background: "#ecf6c5", padding: "3px 9px", borderRadius: 20 }}>Approved</span>
-            </div>
-          </div>
-          {/* Right card */}
-          <div className="hero-card-right" style={{ position: "absolute", right: -18, top: 96, width: 196, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "15px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.4)" }}>
-            <div style={{ fontSize: 11, color: "#8b9790", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".02em", marginBottom: 6 }}>Paid this month</div>
-            <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 26, color: "#161d1a", letterSpacing: "-.02em" }}>$24,800</div>
-            <div style={{ marginTop: 10, display: "flex", alignItems: "flex-end", gap: 4, height: 34 }}>
-              {[44, 62, 50, 82, 100].map((h, i) => (
-                <span key={i} style={{ flex: 1, background: h > 70 ? "#0f503c" : "#dbd8d0", borderRadius: "3px 3px 0 0", height: `${h}%`, display: "block" }} />
-              ))}
-            </div>
-          </div>
-          {/* Bottom card */}
-          <div className="hero-card-bottom" style={{ position: "absolute", left: 40, bottom: -26, width: 300, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "14px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.4)" }}>
-            <div style={{ fontSize: 11.5, fontWeight: 700, color: "#161d1a", marginBottom: 11 }}>Lead pipeline</div>
-            <div style={{ display: "flex", gap: 7 }}>
-              {[{ n: 4, label: "New", color: "#6b7771" }, { n: 5, label: "Quoted", color: "#c2693f" }, { n: 6, label: "Approved", color: "#0b3d2e" }].map((s) => (
-                <div key={s.label} style={{ flex: 1, textAlign: "center" }}>
-                  <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 700, fontSize: 16, color: s.color }}>{s.n}</div>
-                  <div style={{ fontSize: 9.5, color: "#9aa8a1", fontWeight: 600 }}>{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── FEATURES + DASHBOARD ── */}
       <section id="features" style={{ maxWidth: 1440, margin: "0 auto", padding: "84px var(--page-gutter)" }}>
         <div data-animate style={{ textAlign: "center", maxWidth: 640, margin: "0 auto 52px" }}>
           <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: ".04em", textTransform: "uppercase", color: "#0f503c", marginBottom: 14 }}>Everything in the workflow</div>
           <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 40, lineHeight: 1.08, letterSpacing: "-.02em", margin: "0 0 16px", color: "#161d1a" }}>
-            Your whole operation, at a glance
+            See your whole operation at a glance
           </h2>
           <p style={{ fontSize: 17, lineHeight: 1.55, color: "#566159", margin: 0 }}>
             From the moment an inquiry lands to the thank-you email after the last plate is cleared.
@@ -210,10 +209,10 @@ export default function HomePage() {
           <div data-animate style={{ textAlign: "center", maxWidth: 620, margin: "0 auto 52px" }}>
             <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: ".04em", textTransform: "uppercase", color: "#0f503c", marginBottom: 14 }}>The pipeline</div>
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 40, lineHeight: 1.08, letterSpacing: "-.02em", margin: "0 0 16px", color: "#161d1a" }}>
-              A clear path from inquiry to event
+              Know exactly where every lead stands
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.55, color: "#566159", margin: 0 }}>
-              Every lead moves through stages configured to your process, so nothing slips and you always know what needs attention.
+              Every lead moves through stages built around your process, so nothing slips through the cracks and you always know what to do next.
             </p>
           </div>
 
@@ -260,10 +259,10 @@ export default function HomePage() {
           <div data-animate>
             <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: ".04em", textTransform: "uppercase", color: "#0f503c", marginBottom: 14 }}>Know your numbers</div>
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 38, lineHeight: 1.1, letterSpacing: "-.02em", margin: "0 0 18px", color: "#161d1a" }}>
-              Projected vs. actual revenue, per event
+              Stop guessing your margins
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: "0 0 26px" }}>
-              See pipeline value from quote estimates, then track what's actually paid. Break down food, labor, and misc costs on every event so you know your true margin, not just your top line.
+              See pipeline value from your quotes, then track what's actually been paid. Break down food, labor, and misc costs on every event so you know your true margin, not just your top line.
             </p>
             {[
               [<><b style={{ color: "#161d1a", fontWeight: 700 }}>Square integration</b> processes deposits and final invoices in-app.</>, "Square integration"],
@@ -325,7 +324,7 @@ export default function HomePage() {
 
 <CtaBand
         heading="Spend less time on admin,<br>more time in the kitchen."
-        subtext="We configure it around your workflow. Then you run your entire client lifecycle from one place."
+        subtext="We configure it around your workflow. Then you run leads, quotes, deposits, and events from one place."
         btnLabel="Book a Demo"
       />
     </main>

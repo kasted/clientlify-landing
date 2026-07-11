@@ -2,10 +2,10 @@ import BookADemoForm from "@/components/BookADemoForm";
 
 export const metadata = {
   title: "Book a Demo | Clientlify",
-  description: "See Clientlify live in 30 minutes. We'll walk through leads, quotes, deposits, and events tailored to your specific workflow.",
+  description: "30 minutes. Your workflow. Your questions. No slides, no sales deck, just leads, quotes, deposits, and events in your actual workflow.",
   openGraph: {
     title: "Book a Demo | Clientlify",
-    description: "See Clientlify live in 30 minutes. Tailored to your specific event business workflow.",
+    description: "30 minutes. Your workflow. Your questions. No slides, no sales deck.",
   },
 };
 
@@ -17,7 +17,7 @@ export default function BookADemoPage() {
       <div style={{ background: "#0f503c" }}>
         <section className="anim-page-hero" style={{ maxWidth: 780, margin: "0 auto", padding: "96px 32px 88px", textAlign: "center" }}>
           <h1 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 44, lineHeight: 1.07, letterSpacing: "-.025em", margin: "0 0 18px", color: "#f7f5f2" }}>
-            See Clientlify in action, live with your questions
+            30 minutes. Your workflow. Your questions.
           </h1>
           <p style={{ fontSize: 16.5, lineHeight: 1.65, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 600 }}>
             We'll walk through the full client lifecycle: leads, quotes, deposits, and events, and show you how it fits your specific workflow.

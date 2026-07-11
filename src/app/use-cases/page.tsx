@@ -4,7 +4,7 @@ import type { CSSProperties } from "react";
 
 export const metadata = {
   title: "Use Cases | Clientlify",
-  description: "See how Clientlify works for taco catering, party rentals, jumper rentals, and other event-based businesses.",
+  description: "Not generic software. See how Clientlify configures to fit taco catering, party rentals, jumper rentals, and other event-based businesses.",
 };
 
 function FeatureCallout({ icon, title, body }: { icon: React.ReactNode; title: string; body: string }) {
@@ -51,10 +51,10 @@ export default function UseCasesPage() {
       <div style={{ background: "#0f503c" }}>
       <section className="anim-page-hero" style={{ maxWidth: 780, margin: "0 auto", padding: "96px 32px 88px", textAlign: "center" }}>
         <h1 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 54, lineHeight: 1.05, letterSpacing: "-.025em", margin: "0 0 20px", color: "#f7f5f2" }}>
-          Purpose-built for event service businesses
+          Not generic software. Built for tacos, tents, and bounce houses.
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 580 }}>
-          Whether you're serving tacos, delivering tents, or dropping off bounce houses, Clientlify is configured to fit your operation and handles the client side so you can focus on the work.
+          Whether you're serving tacos, delivering tents, or dropping off bounce houses, Clientlify configures to fit your operation and handles the client side so you can focus on the work.
         </p>
       </section>
       </div>

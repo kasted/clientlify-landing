@@ -26,7 +26,7 @@ export default function HeroVideo() {
         muted
         loop
         playsInline
-        style={{ width: "100%", height: 540, objectFit: "cover", display: "block" }}
+        style={{ width: "100%", aspectRatio: "1 / 1", objectFit: "cover", display: "block" }}
       />
       <button
         onClick={toggle}

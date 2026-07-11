@@ -4,7 +4,7 @@ import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
   title: "About | Clientlify",
-  description: "Clientlify was built by Scott Mitchell, owner of Scott's Burgers, to manage his own catering and event business.",
+  description: "Clientlify was built by Scott Mitchell, owner of Scott's Burgers, after a spreadsheet nearly broke his catering business.",
 };
 
 export default function AboutPage() {
@@ -64,7 +64,7 @@ export default function AboutPage() {
               What we stand for
             </h2>
             <p style={{ fontSize: 16.5, lineHeight: 1.6, color: "#566159", margin: 0 }}>
-              Clientlify is built around a few simple beliefs about what software for small operators should be.
+              Not a roadmap built by committee. Just a few simple beliefs about what software for small operators should be.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
@@ -110,8 +110,8 @@ export default function AboutPage() {
       </section>
 
       <CtaBand
-        heading="See Clientlify in action"
-        subtext="Book a demo and we'll walk through your workflow together."
+        heading="See the tool an operator built for operators"
+        subtext="Book a demo and we'll walk through your specific workflow together, no sales deck required."
         btnLabel="Book a Demo"
       />
     </main>

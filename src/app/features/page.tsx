@@ -5,7 +5,7 @@ import type { CSSProperties } from "react";
 
 export const metadata = {
   title: "Features | Clientlify",
-  description: "One dashboard for the entire client lifecycle: capture, quote, book, deliver, and follow up.",
+  description: "One dashboard for the entire client lifecycle: capture, quote, book, deliver, and follow up, configured to your operation.",
 };
 
 function CheckIcon() {
@@ -35,10 +35,10 @@ export default function FeaturesPage() {
       <div style={{ background: "#0f503c" }}>
       <section className="anim-page-hero" style={{ maxWidth: 780, margin: "0 auto", padding: "96px 32px 88px", textAlign: "center" }}>
         <h1 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 54, lineHeight: 1.05, letterSpacing: "-.025em", margin: "0 0 20px", color: "#f7f5f2" }}>
-          Everything you need to run your event business, end to end
+          One dashboard. Every step of your event business.
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.55, color: "rgba(247,245,242,.72)", margin: "0 auto", maxWidth: 600 }}>
-          One dashboard for the entire client lifecycle, configured around your operation: capture, quote, book, deliver, and follow up, with the numbers that keep you profitable.
+          Configured around your operation, not a generic template: capture, quote, book, deliver, and follow up, with the numbers that keep you profitable.
         </p>
       </section>
       </div>
@@ -111,7 +111,7 @@ export default function FeaturesPage() {
             </div>
             <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: ".05em", textTransform: "uppercase", color: "#0f503c", marginBottom: 8 }}>Pipeline</div>
             <h2 style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 26, lineHeight: 1.12, letterSpacing: "-.02em", margin: "0 0 11px", color: "#161d1a" }}>
-              Always know where every lead stands
+              Every lead, one clear status
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.6, color: "#566159", margin: "0 0 14px" }}>
               Pipeline stages configured to your process. Drag between stages, spot leads overdue for follow-up, and archive the ones that don&apos;t convert, without touching your stats.
