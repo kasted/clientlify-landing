@@ -1,6 +1,11 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
+import how1 from "../../../public/how-1.jpg";
+import how2 from "../../../public/how-2.jpg";
+import how3 from "../../../public/how-3.jpg";
+import how4 from "../../../public/how-4.jpg";
+import how5 from "../../../public/how-5.jpg";
 
 export const metadata = {
   title: "How It Works | Clientlify",
@@ -40,8 +45,8 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
-            <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-              <Image src="/how-1.jpg" alt="Capturing a new catering inquiry" fill priority sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+              <Image src={how1} alt="Capturing a new catering inquiry" fill priority placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
             </div>
             <div className="pop-card" style={{ position: "absolute", right: -22, bottom: 28, width: 230, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "15px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 9 }}>
@@ -60,8 +65,8 @@ export default function HowItWorksPage() {
         <div style={{ maxWidth: 1440, margin: "0 auto", padding: "64px var(--page-gutter)" }}>
           <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
             <div data-animate style={{ position: "relative" } as CSSProperties}>
-              <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-                <Image src="/how-2.jpg" alt="Menu and quote" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+                <Image src={how2} alt="Menu and quote" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
               </div>
               <div className="pop-card" style={{ position: "absolute", right: -22, top: 34, width: 236, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "15px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 11 }}>
@@ -111,8 +116,8 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
-            <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-              <Image src="/how-3.jpg" alt="Deposit and booking" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+              <Image src={how3} alt="Deposit and booking" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
             </div>
             <div className="pop-card" style={{ position: "absolute", left: -22, bottom: 30, width: 226, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: 16, boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10 }}>
@@ -134,8 +139,8 @@ export default function HowItWorksPage() {
         <div style={{ maxWidth: 1440, margin: "0 auto", padding: "64px var(--page-gutter)" }}>
           <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
             <div data-animate style={{ position: "relative" } as CSSProperties}>
-              <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-                <Image src="/how-4.jpg" alt="Live event" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+                <Image src={how4} alt="Live event" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
               </div>
               <div className="pop-card" style={{ position: "absolute", right: -22, top: 32, width: 222, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: "15px 16px", boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 11 }}>
@@ -186,8 +191,8 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
-            <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-              <Image src="/how-5.jpg" alt="Post-event follow-up" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+              <Image src={how5} alt="Post-event follow-up" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
             </div>
             <div className="pop-card" style={{ position: "absolute", left: -22, top: 36, width: 236, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: 16, boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10 }}>

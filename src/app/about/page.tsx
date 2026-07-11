@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
+import aboutImg from "../../../public/about.png";
 
 export const metadata = {
   title: "About | Clientlify",
@@ -42,8 +43,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
-            <div style={{ position: "relative", height: 460, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-              <Image src="/about.png" alt="Scott Mitchell of Scott's Burgers" fill priority sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "relative", height: 460, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+              <Image src={aboutImg} alt="Scott Mitchell of Scott's Burgers" fill priority placeholder="blur" sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
             </div>
             <div className="pop-card" style={{ position: "absolute", left: -22, bottom: 32, width: 220, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: 16, boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
               <div style={{ fontFamily: "var(--font-schibsted, Schibsted Grotesk), sans-serif", fontWeight: 800, fontSize: 15, color: "#161d1a", marginBottom: 3 }}>Scott Mitchell</div>

@@ -2,6 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
 import type { CSSProperties } from "react";
+import ft1 from "../../../public/ft-1.jpg";
+import ft2 from "../../../public/ft-2.jpg";
+import ft3 from "../../../public/ft-3.jpg";
+import ft4 from "../../../public/ft-4.jpg";
+import ft5 from "../../../public/ft-5.jpg";
 
 export const metadata = {
   title: "Features | Clientlify",
@@ -50,8 +55,8 @@ export default function FeaturesPage() {
           {/* ── Capture ── */}
           <div data-animate>
             <div style={{ position: "relative", marginBottom: 24 }}>
-              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)" }}>
-                <Image src="/ft-1.jpg" alt="Event inquiry" fill priority sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)", background: "#eeece6" }}>
+                <Image src={ft1} alt="Event inquiry" fill priority placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
               </div>
               <div className="pop-card" style={{ position: "absolute", right: -10, top: 20, width: 208, background: "#fff", border: "1px solid #eeece6", borderRadius: 13, padding: 13, boxShadow: "0 18px 36px -18px rgba(20,40,32,.4)" } as CSSProperties}>
                 <div style={{ fontSize: 11, fontWeight: 700, color: "#161d1a", marginBottom: 9 }}>New inquiry</div>
@@ -90,8 +95,8 @@ export default function FeaturesPage() {
           {/* ── Pipeline ── */}
           <div data-animate style={{ "--anim-delay": "100ms" } as CSSProperties}>
             <div style={{ position: "relative", marginBottom: 24 }}>
-              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)" }}>
-                <Image src="/ft-2.jpg" alt="Feature 2" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)", background: "#eeece6" }}>
+                <Image src={ft2} alt="Feature 2" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
               </div>
               <div className="pop-card" style={{ position: "absolute", left: -10, bottom: 20, width: 214, background: "#fff", border: "1px solid #eeece6", borderRadius: 13, padding: 13, boxShadow: "0 18px 36px -18px rgba(20,40,32,.4)" } as CSSProperties}>
                 {[
@@ -125,8 +130,8 @@ export default function FeaturesPage() {
           {/* ── Get paid ── */}
           <div data-animate>
             <div style={{ position: "relative", marginBottom: 24 }}>
-              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)" }}>
-                <Image src="/ft-3.jpg" alt="Feature 3" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)", background: "#eeece6" }}>
+                <Image src={ft3} alt="Feature 3" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
               </div>
               <div className="pop-card" style={{ position: "absolute", right: -10, top: 20, width: 218, background: "#fff", border: "1px solid #eeece6", borderRadius: 13, padding: 13, boxShadow: "0 18px 36px -18px rgba(20,40,32,.4)" } as CSSProperties}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 9 }}>
@@ -165,8 +170,8 @@ export default function FeaturesPage() {
           {/* ── Events ── */}
           <div data-animate style={{ "--anim-delay": "100ms" } as CSSProperties}>
             <div style={{ position: "relative", marginBottom: 24 }}>
-              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)" }}>
-                <Image src="/ft-4.jpg" alt="Feature 4" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", height: 300, borderRadius: 18, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)", background: "#eeece6" }}>
+                <Image src={ft4} alt="Feature 4" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
               </div>
               <div className="pop-card" style={{ position: "absolute", left: -10, bottom: 20, width: 204, background: "#fff", border: "1px solid #eeece6", borderRadius: 13, padding: 13, boxShadow: "0 18px 36px -18px rgba(20,40,32,.4)" } as CSSProperties}>
                 <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 9 }}>
@@ -202,8 +207,8 @@ export default function FeaturesPage() {
           <div data-animate className="features-revenue-row" style={{ gridColumn: "1 / -1", background: "#f7f5f2", border: "1px solid #eeece6", borderRadius: 22, padding: "44px 48px" } as CSSProperties}>
             <div className="features-revenue-inner" style={{ display: "grid", gridTemplateColumns: "1.15fr 1fr", gap: "0 56px", alignItems: "center" }}>
               <div style={{ position: "relative" }}>
-                <div style={{ position: "relative", height: 340, borderRadius: 16, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)" }}>
-                  <Image src="/ft-5.jpg" alt="Feature 5" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+                <div style={{ position: "relative", height: 340, borderRadius: 16, overflow: "hidden", boxShadow: "0 22px 44px -22px rgba(20,40,32,.32)", background: "#eeece6" }}>
+                  <Image src={ft5} alt="Feature 5" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
                 </div>
                 <div className="pop-card" style={{ position: "absolute", left: -10, top: 28, width: 228, background: "#fff", border: "1px solid #eeece6", borderRadius: 13, padding: 13, boxShadow: "0 18px 36px -18px rgba(20,40,32,.4)" } as CSSProperties}>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 9 }}>

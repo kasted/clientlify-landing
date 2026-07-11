@@ -1,6 +1,9 @@
 import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
 import type { CSSProperties } from "react";
+import use1 from "../../../public/use-1.jpg";
+import use2 from "../../../public/use-2.jpg";
+import use3 from "../../../public/use-3.jpg";
 
 export const metadata = {
   title: "Use Cases | Clientlify",
@@ -83,8 +86,8 @@ export default function UseCasesPage() {
             />
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
-            <div style={{ position: "relative", height: 420, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-              <Image src="/use-1.jpg" alt="Taco catering setup" fill priority sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "relative", height: 420, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+              <Image src={use1} alt="Taco catering setup" fill priority placeholder="blur" sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
             </div>
             <div className="pop-card" style={{ position: "absolute", right: -22, bottom: 32, width: 226, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: 16, boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
               <div style={{ fontSize: 11, color: "#8b9790", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".02em", marginBottom: 8 }}>Quote · Garcia Wedding</div>
@@ -108,8 +111,8 @@ export default function UseCasesPage() {
         <div style={{ maxWidth: 1440, margin: "0 auto", padding: "88px var(--page-gutter)" }}>
           <div className="page-2col" style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 64, alignItems: "center" }}>
             <div data-animate style={{ position: "relative" } as CSSProperties}>
-              <div style={{ position: "relative", height: 420, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-                <Image src="/use-2.jpg" alt="Party rental equipment" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+              <div style={{ position: "relative", height: 420, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+                <Image src={use2} alt="Party rental equipment" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
               </div>
               <div className="pop-card" style={{ position: "absolute", left: -22, bottom: 32, width: 236, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: 16, boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
                 <div style={{ fontSize: 11, color: "#8b9790", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".02em", marginBottom: 10 }}>Saturday Route</div>
@@ -174,8 +177,8 @@ export default function UseCasesPage() {
             />
           </div>
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
-            <div style={{ position: "relative", height: 420, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)" }}>
-              <Image src="/use-3.jpg" alt="Bounce house rental" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+            <div style={{ position: "relative", height: 420, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.36)", background: "#eeece6" }}>
+              <Image src={use3} alt="Bounce house rental" fill placeholder="blur" sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
             </div>
             <div className="pop-card" style={{ position: "absolute", left: -22, top: 36, width: 230, background: "#fff", border: "1px solid #eeece6", borderRadius: 14, padding: 16, boxShadow: "0 24px 50px -24px rgba(20,40,32,.42)" }}>
               <div style={{ fontSize: 11, color: "#8b9790", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".02em", marginBottom: 10 }}>Fleet status · Jul 12</div>
