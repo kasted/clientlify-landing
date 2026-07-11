@@ -280,7 +280,7 @@ export default function HomePage() {
           <div data-animate style={{ "--anim-delay": "120ms", position: "relative" } as CSSProperties}>
             {/* Photo */}
             <div style={{ borderRadius: 18, overflow: "hidden", boxShadow: "0 30px 60px -32px rgba(20,40,32,.32)", aspectRatio: "1 / 1" }}>
-              <video autoPlay muted loop playsInline preload="none" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}>
+              <video autoPlay muted loop playsInline preload="none" poster="/home-numbers-poster.jpg" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}>
                 <source src="/home-numbers.mp4" type="video/mp4" />
               </video>
               <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 180, borderRadius: "0 0 18px 18px", background: "linear-gradient(to top, rgba(10,30,18,.72) 0%, transparent 100%)" }} />
