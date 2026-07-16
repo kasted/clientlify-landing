@@ -39,7 +39,7 @@ export default function SiteNav() {
         <div style={{ display: "flex", alignItems: "center", gap: 36 }}>
           <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt="Clientlify" height={32} style={{ display: "block" }} />
+            <img src="/logo-light.svg" alt="Clientlify" height={32} style={{ display: "block" }} />
           </Link>
 
           <div style={{ alignItems: "center", gap: 2 }} className="nav-desktop">

@@ -17,7 +17,7 @@ export default function SiteFooter() {
         <div>
           <div style={{ marginBottom: 14 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-light.svg" alt="Clientlify" height={28} style={{ display: "block" }} />
+            <img src="/logo-dark.svg" alt="Clientlify" height={28} style={{ display: "block" }} />
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.55, color: "#7c8a83", margin: 0, maxWidth: 280 }}>
             Built by an operator, for event service businesses.
