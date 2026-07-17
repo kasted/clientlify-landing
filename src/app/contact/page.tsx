@@ -6,6 +6,7 @@ export const metadata = {
   openGraph: {
     title: "Contact | Clientlify",
     description: "No chatbot, no ticket queue. A real person will get back to you within one business day.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Clientlify: event business management" }],
   },
 };
 

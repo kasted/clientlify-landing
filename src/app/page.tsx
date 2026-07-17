@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Clientlify | Client Management for Event Businesses",
     description: "Capture leads, send quotes, collect deposits, and manage events, all in one place, configured to your workflow.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Clientlify: event business management" }],
   },
   alternates: { canonical: "https://clientlify.com" },
 };
