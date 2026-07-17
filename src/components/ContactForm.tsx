@@ -26,15 +26,36 @@ const inputStyle: React.CSSProperties = {
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
+  const [honeypot, setHoneypot] = useState("");
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
   function set(field: string, val: string) {
     setForm((f) => ({ ...f, [field]: val }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    if (sending) return;
+    setSending(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formType: "contact", honeypot, ...form }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(data?.error || "Something went wrong. Please try again.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -73,9 +94,15 @@ export default function ContactForm() {
       <Field label="Message">
         <textarea required rows={6} style={{ ...inputStyle, resize: "vertical" }} value={form.message} onChange={(e) => set("message", e.target.value)} placeholder="Tell us what's on your mind…" />
       </Field>
+      <input type="text" name="company_website" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: "absolute", left: -9999, width: 1, height: 1, opacity: 0 }} />
+      {error && (
+        <p style={{ fontSize: 14, color: "#b3261e", margin: 0 }}>{error}</p>
+      )}
       <button
         type="submit"
+        disabled={sending}
         style={{
+          opacity: sending ? 0.7 : 1,
           fontSize: 15.5,
           fontWeight: 700,
           color: "#f7f5f2",
@@ -88,7 +115,7 @@ export default function ContactForm() {
           fontFamily: "var(--font-hanken, Hanken Grotesk), system-ui, sans-serif",
         }}
       >
-        Send message →
+        {sending ? "Sending…" : "Send message →"}
       </button>
       <p style={{ fontSize: 12.5, color: "#9aa8a1", textAlign: "center", margin: 0 }}>
         We&apos;ll get back to you within one business day.
