@@ -62,10 +62,10 @@ export default function ContactForm() {
       style={{ "--anim-delay": "120ms", display: "flex", flexDirection: "column", gap: 20, background: "#fff", border: "1px solid #e5e3db", borderRadius: 20, padding: "36px 32px", boxShadow: "0 20px 50px -24px rgba(20,40,32,.14)" } as React.CSSProperties}
     >
       <Field label="Your name">
-        <input required style={inputStyle} value={form.name} onChange={(e) => set("name", e.target.value)} placeholder="Scott Mitchell" />
+        <input required style={inputStyle} value={form.name} onChange={(e) => set("name", e.target.value)} placeholder="Your name" />
       </Field>
       <Field label="Email address">
-        <input required type="email" style={inputStyle} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="scott@scotts-burgers.com" />
+        <input required type="email" style={inputStyle} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@yourbusiness.com" />
       </Field>
       <Field label="Subject">
         <input required style={inputStyle} value={form.subject} onChange={(e) => set("subject", e.target.value)} placeholder="Question about Clientlify" />
